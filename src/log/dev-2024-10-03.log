@@ -1,0 +1,690 @@
+┌ Info: 2024-10-03 07:52:34 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 07:52:50 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 07:53:08 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 07:53:08 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 07:59:22 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Info: 2024-10-03 08:03:19 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 08:03:42 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Info: 2024-10-03 08:03:54 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 08:05:33 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 08:05:49 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 08:06:16 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 08:06:16 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 08:06:54 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Info: 2024-10-03 08:09:46 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Info: 2024-10-03 08:09:59 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 08:10:11 File was uploaded: 
+│   fileuploads = Dict{AbstractString, AbstractString}("name" => "exemplo.csv", "channel" => "ECBLDKEVSOKNSANZEOYAWSAPRBEXHNPG", "path" => "C:\\Users\\renil\\AppData\\Local\\Temp\\jl_h0dmvqrMxU")
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:30
+┌ Info: 2024-10-03 08:10:11 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Info: 2024-10-03 09:26:59 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Error: 2024-10-03 09:27:18 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for anonymous function "#110":
+│  [1] (::var"#110#112")(selected_dataset)
+│      @ C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:1068
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─ %1  = selected_dataset === ""
+│ └──       goto #3 if not %1
+│ 2 ─ %3  = Main.names
+│ │   %4  = CSV.read
+│ │   %5  = Main.DataFrame
+│ │   %6  = (%4)("exemplo/de.csv", %5)
+│ │   %7  = (%3)(%6)
+│ │   %8  = Core.getfield(#self#, :__model__)
+│ │   %9  = Base.getproperty(%8, :variables)
+│ │         Base.setindex!(%9, %7)
+│ └──       return %7
+│ 3 ─ %12 = Main.names
+│ │   %13 = CSV.read
+│ │   %14 = Base.string("public/uploads/", selected_dataset)
+│ │   %15 = Main.DataFrame
+│ │   %16 = (%13)(%14, %15)
+│ │   %17 = (%12)(%16)
+│ │   %18 = Core.getfield(#self#, :__model__)
+│ │   %19 = Base.getproperty(%18, :variables)
+│ │         Base.setindex!(%19, %17)
+│ └──       return %17
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   Mini tutorial.txt
+│ 
+│   Exception:
+│   ArgumentError("\"public/uploads/Mini tutorial.txt\" is not a valid file or doesn't exist")
+│ 
+│   exception = (ArgumentError("\"public/uploads/Mini tutorial.txt\" is not a valid file or doesn't exist"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000001ee93ee2622, Ptr{Nothing} @0x000001ee93ee6e6b, Ptr{Nothing} @0x000001ee938c8709, Ptr{Nothing} @0x000001ee938c8ac3, Ptr{Nothing} @0x00007ffbba5a959b, Ptr{Nothing} @0x000001ee938c78ec, Ptr{Nothing} @0x000001ee938c840c, Ptr{Nothing} @0x000001ee938c846b, Ptr{Nothing} @0x000001ee938c768e, Ptr{Nothing} @0x000001ee938ac007, Ptr{Nothing} @0x000001ee938ac41b, Ptr{Nothing} @0x000001ee8408f84a, Ptr{Nothing} @0x000001ee8408fda5, Ptr{Nothing} @0x000001ee8408fe95, Ptr{Nothing} @0x000001ee8408fed0, Ptr{Nothing} @0x000001ee8406a7f4, Ptr{Nothing} @0x000001ee8406a85b, Ptr{Nothing} @0x00007ffbba5a959b, Ptr{Nothing} @0x00007ffb79a42590, Ptr{Nothing} @0x00007ffb798e08ed, Ptr{Nothing} @0x00007ffb79a4cc90, Ptr{Nothing} @0x000001ee83fcb63b, Ptr{Nothing} @0x000001ee83fcb753, Ptr{Nothing} @0x00007ffbba5a959b, Ptr{Nothing} @0x000001ee83fc5c31, Ptr{Nothing} @0x000001ee83fc872e, Ptr{Nothing} @0x000001ee83fc8bfb, Ptr{Nothing} @0x00007ffbba5c2e43])
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\stipple\mutators.jl:54
+┌ Info: 2024-10-03 09:45:28 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 09:45:29 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 09:45:37 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 09:45:37 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Error: 2024-10-03 09:46:09 ArgumentError: typeof(data) doesn't have a defined `StructTypes.StructType`
+│ Stacktrace:
+│   [1] write(::StructTypes.NoStructType, buf::Vector{UInt8}, pos::Int64, len::Int64, ::typeof(data); kw::@Kwargs{})
+│     @ JSON3 C:\Users\renil\.julia\packages\JSON3\jSAdy\src\write.jl:93
+│   [2] write(::StructTypes.NoStructType, buf::Vector{UInt8}, pos::Int64, len::Int64, ::typeof(data))
+│     @ JSON3 C:\Users\renil\.julia\packages\JSON3\jSAdy\src\write.jl:93
+│   [3] write(::StructTypes.DictType, buf::Vector{UInt8}, pos::Int64, len::Int64, x::Dict{String, Any}; kw::@Kwargs{})
+│     @ JSON3 C:\Users\renil\.julia\packages\JSON3\jSAdy\src\write.jl:157
+│   [4] write(::StructTypes.DictType, buf::Vector{UInt8}, pos::Int64, len::Int64, x::Dict{String, Any})
+│     @ JSON3 C:\Users\renil\.julia\packages\JSON3\jSAdy\src\write.jl:147
+│   [5] write(::StructTypes.DictType, buf::Vector{UInt8}, pos::Int64, len::Int64, x::Dict{Symbol, Any}; kw::@Kwargs{})
+│     @ JSON3 C:\Users\renil\.julia\packages\JSON3\jSAdy\src\write.jl:157
+│   [6] write
+│     @ C:\Users\renil\.julia\packages\JSON3\jSAdy\src\write.jl:147 [inlined]
+│   [7] write(obj::Dict{Symbol, Any}; kw::@Kwargs{})
+│     @ JSON3 C:\Users\renil\.julia\packages\JSON3\jSAdy\src\write.jl:40
+│   [8] write(obj::Dict{Symbol, Any})
+│     @ JSON3 C:\Users\renil\.julia\packages\JSON3\jSAdy\src\write.jl:37
+│   [9] vue_integration(::Type{Main_ReactiveModel}; vue_app_name::String, core_theme::Bool, debounce::Int64, transport::Module)
+│     @ Stipple.Elements C:\Users\renil\.julia\packages\Stipple\8huSn\src\Elements.jl:59
+│  [10] vue_integration
+│     @ C:\Users\renil\.julia\packages\Stipple\8huSn\src\Elements.jl:52 [inlined]
+│  [11] (::Stipple.var"#57#59"{Main_ReactiveModel, String, Int64, Bool, Module})()
+│     @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:667
+│  [12] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:547
+│  [13] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:172
+│  [14] route_request
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:147 [inlined]
+│  [15] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:300
+│  [16] handle_request
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:292 [inlined]
+│  [17] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\macros.jl:123
+│  [18] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [19] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [20] #153
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:425 [inlined]
+│  [21] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, @Kwargs{}}, print_error::Bool)
+│     @ Distributed C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\process_messages.jl:70
+│  [22] #remotecall_fetch#158
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:450 [inlined]
+│  [23] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:449 [inlined]
+│  [24] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:492 [inlined]
+│  [25] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:344
+│  [26] setup_http_listener (repeats 2 times)
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:342 [inlined]
+│  [27] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:313
+│  [28] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:333
+│  [29] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:124
+│  [30] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [31] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [32] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:469
+│  [33] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:401
+│ 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:356
+┌ Info: 2024-10-03 09:48:06 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 09:48:22 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 09:48:47 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 09:48:47 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 09:49:25 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Info: 2024-10-03 09:50:46 File was uploaded: 
+│   fileuploads = Dict{AbstractString, AbstractString}("name" => "art.csv", "channel" => "QJLRIUREAWSDZMOKBQGHNSGXMRFFYQNS", "path" => "C:\\Users\\renil\\AppData\\Local\\Temp\\jl_g76fsrs7Gr")
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:30
+┌ Info: 2024-10-03 09:50:47 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Info: 2024-10-03 09:51:28 File was uploaded: 
+│   fileuploads = Dict{AbstractString, AbstractString}("name" => "Demonstrativa_Planejamento-Tributario_4.1 (1).xlsx", "channel" => "QJLRIUREAWSDZMOKBQGHNSGXMRFFYQNS", "path" => "C:\\Users\\renil\\AppData\\Local\\Temp\\jl_qJShMRUPiV")
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:30
+┌ Info: 2024-10-03 09:51:28 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Info: 2024-10-03 09:56:01 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 09:56:17 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 09:56:28 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 09:56:28 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 09:57:13 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Info: 2024-10-03 09:57:27 rejected
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:51
+┌ Info: 2024-10-03 09:58:08 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Info: 2024-10-03 09:58:28 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 09:58:53 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 09:58:56 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 09:59:19 File was uploaded: 
+│   fileuploads = Dict{AbstractString, AbstractString}("name" => "teste3.csv", "channel" => "KVNBBGZIHAGTBPDMVSRRZRTNBYAVWFJJ", "path" => "C:\\Users\\renil\\AppData\\Local\\Temp\\jl_IBCHSd2HQp")
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:30
+┌ Info: 2024-10-03 09:59:20 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Info: 2024-10-03 10:00:19 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 10:00:57 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 10:02:07 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 10:02:23 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 10:02:36 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 10:02:36 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 10:03:21 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Info: 2024-10-03 10:03:28 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 10:03:38 File was uploaded: 
+│   fileuploads = Dict{AbstractString, AbstractString}("name" => "teste4.csv", "channel" => "OGUKZETQUBSBYHSWIBKQMPJDHJBPPFMW", "path" => "C:\\Users\\renil\\AppData\\Local\\Temp\\jl_ZA5GPu3E3W")
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:30
+┌ Info: 2024-10-03 10:03:39 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Info: 2024-10-03 10:04:18 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:01:30 File was uploaded: 
+│   fileuploads = Dict{AbstractString, AbstractString}("name" => "teste4.csv", "channel" => "OGUKZETQUBSBYHSWIBKQMPJDHJBPPFMW", "path" => "C:\\Users\\renil\\AppData\\Local\\Temp\\jl_VwR2pe9cX0")
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:30
+┌ Info: 2024-10-03 14:01:30 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Error: 2024-10-03 14:05:09 Failed to revise C:\Users\renil\TCC\ForestInventory\app.jl
+│   exception = Revise.ReviseEvalException("C:\\Users\\renil\\TCC\\ForestInventory\\app.jl:3", SystemError("opening file \"C:\\\\Users\\\\renil\\\\TCC\\\\ForestInventory\\\\aas.jl\"", 2, nothing), Any[(_include_dependency(mod::Module, _path::String; track_content::Bool, path_may_be_dir::Bool) at loading.jl:2031, 1), (_include_dependency at loading.jl:2021 [inlined], 1), (_include(mapexpr::Function, mod::Module, _path::String) at loading.jl:2627, 1), (include(fname::String) at sysimg.jl:38, 1), (top-level scope at app.jl:3, 1)])
+└ @ Revise C:\Users\renil\.julia\packages\Revise\vyLVb\src\packagedef.jl:733
+┌ Warning: 2024-10-03 14:05:10 The running code does not match the saved version for the following files:
+│ 
+│   C:\Users\renil\TCC\ForestInventory\app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise C:\Users\renil\.julia\packages\Revise\vyLVb\src\packagedef.jl:846
+┌ Error: 2024-10-03 14:06:13 Failed to revise C:\Users\renil\TCC\ForestInventory\app.jl
+│   exception = (LoadError("C:\\Users\\renil\\TCC\\ForestInventory\\app.jl", 3, MethodError(var"@__DIR__", (:(#= C:\Users\renil\TCC\ForestInventory\app.jl:3 =#), Main, :(("/lib", "AAS.jl"))), 0x0000000000006a49)), Union{Ptr{Nothing}, Base.InterpreterIP}[])
+└ @ Revise C:\Users\renil\.julia\packages\Revise\vyLVb\src\packagedef.jl:735
+┌ Info: 2024-10-03 14:06:49 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 14:07:51 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 14:08:04 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:08:31 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:10:10 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:13:45 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:13:55 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 14:13:55 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Warning: 2024-10-03 14:14:19 UndefVarError(:aas, Main)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-03 14:14:55 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-03 14:15:03 ArgumentError("\"public/uploads/\" is not a valid file or doesn't exist")
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-03 14:17:57 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 14:18:10 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:18:17 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 14:18:17 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 14:19:13 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:49
+┌ Warning: 2024-10-03 14:19:15 ArgumentError("\"public/uploads/\" is not a valid file or doesn't exist")
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-03 14:19:59 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:20:21 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-03 14:20:26 ArgumentError("\"public/uploads/\" is not a valid file or doesn't exist")
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Warning: 2024-10-03 14:20:35 ArgumentError("\"public/uploads/\" is not a valid file or doesn't exist")
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-03 14:20:47 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-03 14:20:52 ArgumentError("\"public/uploads/\" is not a valid file or doesn't exist")
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-03 14:21:19 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:22:20 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 14:22:33 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:22:49 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 14:22:50 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 14:25:03 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Warning: 2024-10-03 14:32:08 MethodError(var"#154#157"{var"##Main_ReactiveModel!#423"}(Instance of 'Main_ReactiveModel'
+│     channel__ (internal): LDSORJUCRMYGABPGQTRBDUDEXIIGAZTR
+│     modes__ (internal): LittleDict{Symbol, Int64, Vector{Symbol}, Vector{Int64}}()
+│     isready (autofield, in): true
+│     isprocessing (autofield, in): false
+│     fileuploads (autofield, in): Dict{AbstractString, AbstractString}()
+│ 
+│     method_swampling (out): ["Área Fixa", "Bitterlich", "Prodan", "Strange", "3P"]
+│     selected_method (in): 
+│     process_swampling (out): ["Amostragem Aleatória Simples", "Amostragem Estratificada", "Amostragem Sistemática", "Amostragem em Dois Estágios", "Amostragem em Conglomerados", "Amostragem Sistemática com Múltiplos Inícios Aleatórios", "Amostragem Independete", "Amostragem com Repetição Total", "Amostragem com Repetição Dupla", "Amostragem com Repetição Parcial"]
+│     selected_process (in): 
+│     upfiles (out): ["Demonstrativa_Planejamento-Tributario_4.1 (1).xlsx", "art.csv", "exemplo.csv", "teste3.csv", "teste4.csv"]
+│     parcel_shape (out): ["Circular", "Retangular", "Quadrada"]
+│     selected_parcel_shape (in): 
+│     variables (out): ["n", "Ocasiao_1", "Ocasiao_2"]
+│     selected_variable (in): Ocasiao_1
+│     upload_datasets (out): ["Demonstrativa_Planejamento-Tributario_4.1 (1).xlsx", "art.csv", "exemplo.csv", "teste3.csv", "teste4.csv"]
+│     selected_dataset (in): art.csv
+│     area_parc (in): 
+│     area_inv (in): 
+│     ear (in): 
+│     alpha (in): 0.5
+│     Button_process (in): true
+│     unit (out): ["m²", "m³", "Kg", "t", "arv"]
+│     selected_unit (in): batata
+│     visual (in): true
+│ ), (), 0x0000000000006ab0)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Warning: 2024-10-03 14:32:11 MethodError(var"#154#157"{var"##Main_ReactiveModel!#423"}(Instance of 'Main_ReactiveModel'
+│     channel__ (internal): LDSORJUCRMYGABPGQTRBDUDEXIIGAZTR
+│     modes__ (internal): LittleDict{Symbol, Int64, Vector{Symbol}, Vector{Int64}}()
+│     isready (autofield, in): true
+│     isprocessing (autofield, in): false
+│     fileuploads (autofield, in): Dict{AbstractString, AbstractString}()
+│ 
+│     method_swampling (out): ["Área Fixa", "Bitterlich", "Prodan", "Strange", "3P"]
+│     selected_method (in): 
+│     process_swampling (out): ["Amostragem Aleatória Simples", "Amostragem Estratificada", "Amostragem Sistemática", "Amostragem em Dois Estágios", "Amostragem em Conglomerados", "Amostragem Sistemática com Múltiplos Inícios Aleatórios", "Amostragem Independete", "Amostragem com Repetição Total", "Amostragem com Repetição Dupla", "Amostragem com Repetição Parcial"]
+│     selected_process (in): 
+│     upfiles (out): ["Demonstrativa_Planejamento-Tributario_4.1 (1).xlsx", "art.csv", "exemplo.csv", "teste3.csv", "teste4.csv"]
+│     parcel_shape (out): ["Circular", "Retangular", "Quadrada"]
+│     selected_parcel_shape (in): 
+│     variables (out): ["n", "Ocasiao_1", "Ocasiao_2"]
+│     selected_variable (in): Ocasiao_1
+│     upload_datasets (out): ["Demonstrativa_Planejamento-Tributario_4.1 (1).xlsx", "art.csv", "exemplo.csv", "teste3.csv", "teste4.csv"]
+│     selected_dataset (in): art.csv
+│     area_parc (in): 
+│     area_inv (in): 
+│     ear (in): 
+│     alpha (in): 0.5
+│     Button_process (in): true
+│     unit (out): ["m²", "m³", "Kg", "t", "arv"]
+│     selected_unit (in): batata
+│     visual (in): true
+│ ), (), 0x0000000000006ab3)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-03 14:35:12 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 14:35:25 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:35:31 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 14:35:31 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 14:37:13 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:37:59 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:38:37 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 14:38:50 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:39:06 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 14:39:06 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 14:40:04 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:41:17 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:42:21 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:46:20 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:52:11 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:54:04 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 14:54:15 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-03 14:54:25 TypeError(:typeassert, "", Bool, "")
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-03 14:54:51 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 15:03:09 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 15:04:29 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 15:04:42 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 15:04:50 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 15:04:50 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 15:06:45 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-03 15:06:55 MethodError(Base.Meta.parse, (10000,), 0x0000000000006a48)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-03 15:07:21 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-03 15:07:26 MethodError(Base.Meta.parse, (Int64, "10000"), 0x0000000000006acc)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-03 15:09:11 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 15:15:34 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Warning: 2024-10-03 15:15:39 MethodError(var"#157#161"{var"##Main_ReactiveModel!#600"}(Instance of 'Main_ReactiveModel'
+│     channel__ (internal): USPLHEJWJDMFITUYZMVHCQLGOJLYKPYV
+│     modes__ (internal): LittleDict{Symbol, Int64, Vector{Symbol}, Vector{Int64}}()
+│     isready (autofield, in): true
+│     isprocessing (autofield, in): false
+│     fileuploads (autofield, in): Dict{AbstractString, AbstractString}()
+│ 
+│     method_swampling (out): ["Área Fixa", "Bitterlich", "Prodan", "Strange", "3P"]
+│     selected_method (in): Área Fixa
+│     process_swampling (out): ["Amostragem Aleatória Simples", "Amostragem Estratificada", "Amostragem Sistemática", "Amostragem em Dois Estágios", "Amostragem em Conglomerados", "Amostragem Sistemática com Múltiplos Inícios Aleatórios", "Amostragem Independete", "Amostragem com Repetição Total", "Amostragem com Repetição Dupla", "Amostragem com Repetição Parcial"]
+│     selected_process (in): Amostragem Aleatória Simples
+│     upfiles (out): ["Demonstrativa_Planejamento-Tributario_4.1 (1).xlsx", "art.csv", "exemplo.csv", "teste3.csv", "teste4.csv"]
+│     parcel_shape (out): ["Circular", "Retangular", "Quadrada"]
+│     selected_parcel_shape (in): Circular
+│     variables (out): ["Unidades", "Volume"]
+│     selected_variable (in): Volume
+│     upload_datasets (out): ["Demonstrativa_Planejamento-Tributario_4.1 (1).xlsx", "art.csv", "exemplo.csv", "teste3.csv", "teste4.csv"]
+│     selected_dataset (in): exemplo.csv
+│     area_parc (in): 1000
+│     area_inv (in): 45
+│     ear (in): 10
+│     alpha (in): 0.05
+│     Button_process (in): true
+│     unit (out): ["m²", "m³", "Kg", "t", "arv"]
+│     selected_unit (in): m³
+│     visibility_visual (in): true
+│ ), (), 0x0000000000006b70)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-03 15:16:57 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 15:17:11 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 15:17:21 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 15:17:21 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 15:19:02 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 15:23:41 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 15:30:01 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 15:57:22 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 15:58:46 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 15:58:59 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 15:59:05 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 15:59:06 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 15:59:55 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 16:02:39 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 16:02:52 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 16:03:25 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 16:03:25 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Warning: 2024-10-03 18:50:29 C:\Users\renil\TCC\ForestInventory\lib\aas.jl no longer exists, deleted all methods
+└ @ Revise C:\Users\renil\.julia\packages\Revise\vyLVb\src\packagedef.jl:677
+┌ Info: 2024-10-03 19:03:22 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 19:03:25 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 19:03:47 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 19:03:47 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 19:04:28 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 19:25:55 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 19:27:03 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 19:29:52 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 19:30:11 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 19:30:49 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 19:30:52 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 19:32:55 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:64
+┌ Info: 2024-10-03 19:33:04 File was uploaded: 
+│   fileuploads = Dict{AbstractString, AbstractString}("name" => "ad.csv", "channel" => "LGRXUFLATOWWFXGORNBMILROCXSROTME", "path" => "C:\\Users\\renil\\AppData\\Local\\Temp\\jl_b2DURwd8Lk")
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:47
+┌ Info: 2024-10-03 19:33:05 uploaded
+└ @ Main C:\Users\renil\TCC\ForestInventory\app.jl:64
+┌ Info: 2024-10-03 19:34:16 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 19:34:59 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 19:56:12 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 19:56:13 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 19:56:40 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 19:56:40 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 19:57:23 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 19:58:05 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 19:58:16 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 19:59:19 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 20:05:07 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 20:05:24 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 20:05:40 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 20:05:52 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 20:06:18 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 20:06:21 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Error: 2024-10-03 20:07:16 Failed to revise C:\Users\renil\TCC\ForestInventory\app.jl
+│   exception = Revise.ReviseEvalException("C:\\Users\\renil\\.julia\\packages\\Stipple\\8huSn\\src\\ReactiveTools.jl:537", UndefVarError(:selected_dataset, Main), Any[(top-level scope at ReactiveTools.jl:537, 1)])
+└ @ Revise C:\Users\renil\.julia\packages\Revise\vyLVb\src\packagedef.jl:733
+┌ Warning: 2024-10-03 20:07:17 The running code does not match the saved version for the following files:
+│ 
+│   C:\Users\renil\TCC\ForestInventory\app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise C:\Users\renil\.julia\packages\Revise\vyLVb\src\packagedef.jl:846
+┌ Error: 2024-10-03 20:07:17 ArgumentError: "public/uploads/Reactive{String}(Observable(""), 1, false, false, "C:\\Users\\renil\\TCC\\ForestInventory\\app.jl:32")" is not a valid file or doesn't exist
+│ Stacktrace:
+│   [1] CSV.Context(source::CSV.Arg, header::CSV.Arg, normalizenames::CSV.Arg, datarow::CSV.Arg, skipto::CSV.Arg, footerskip::CSV.Arg, transpose::CSV.Arg, comment::CSV.Arg, ignoreemptyrows::CSV.Arg, ignoreemptylines::CSV.Arg, select::CSV.Arg, drop::CSV.Arg, limit::CSV.Arg, buffer_in_memory::CSV.Arg, threaded::CSV.Arg, ntasks::CSV.Arg, tasks::CSV.Arg, rows_to_check::CSV.Arg, lines_to_check::CSV.Arg, missingstrings::CSV.Arg, missingstring::CSV.Arg, delim::CSV.Arg, ignorerepeated::CSV.Arg, quoted::CSV.Arg, quotechar::CSV.Arg, openquotechar::CSV.Arg, closequotechar::CSV.Arg, escapechar::CSV.Arg, dateformat::CSV.Arg, dateformats::CSV.Arg, decimal::CSV.Arg, groupmark::CSV.Arg, truestrings::CSV.Arg, falsestrings::CSV.Arg, stripwhitespace::CSV.Arg, type::CSV.Arg, types::CSV.Arg, typemap::CSV.Arg, pool::CSV.Arg, downcast::CSV.Arg, lazystrings::CSV.Arg, stringtype::CSV.Arg, strict::CSV.Arg, silencewarnings::CSV.Arg, maxwarnings::CSV.Arg, debug::CSV.Arg, parsingdebug::CSV.Arg, validate::CSV.Arg, streaming::CSV.Arg)
+│     @ CSV C:\Users\renil\.julia\packages\CSV\cwX2w\src\context.jl:314
+│   [2] #File#32
+│     @ C:\Users\renil\.julia\packages\CSV\cwX2w\src\file.jl:222 [inlined]
+│   [3] CSV.File(source::String)
+│     @ CSV C:\Users\renil\.julia\packages\CSV\cwX2w\src\file.jl:162
+│   [4] #read#118
+│     @ C:\Users\renil\.julia\packages\CSV\cwX2w\src\CSV.jl:117 [inlined]
+│   [5] read
+│     @ C:\Users\renil\.julia\packages\CSV\cwX2w\src\CSV.jl:113 [inlined]
+│   [6] var"##Main_ReactiveModel!#1532"()
+│     @ Main C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1058
+│   [7] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│   [8] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│   [9] |>
+│     @ .\operators.jl:926 [inlined]
+│  [10] init(t::Type{Main_ReactiveModel}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool, always_register_channels::Bool)
+│     @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:514
+│  [11] init_from_storage(t::Type{Main_ReactiveModel}; channel::String, kwargs::@Kwargs{})
+│     @ Stipple.ModelStorage.Sessions C:\Users\renil\.julia\packages\Stipple\8huSn\src\ModelStorage.jl:25
+│  [12] init_from_storage(t::Type{Main_ReactiveModel})
+│     @ Stipple.ModelStorage.Sessions C:\Users\renil\.julia\packages\Stipple\8huSn\src\ModelStorage.jl:22
+│  [13] top-level scope
+│     @ C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:768
+│  [14] eval
+│     @ .\boot.jl:430 [inlined]
+│  [15] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:1194
+│  [16] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [17] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [18] (::Stipple.Pages.var"#7#10"{FilePathsBase.WindowsPath, String, @Kwargs{}})()
+│     @ Stipple.Pages C:\Users\renil\.julia\packages\Stipple\8huSn\src\Pages.jl:68
+│  [19] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:547
+│  [20] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:172
+│  [21] route_request
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:147 [inlined]
+│  [22] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:300
+│  [23] handle_request
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:292 [inlined]
+│  [24] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\macros.jl:123
+│  [25] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [26] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [27] #153
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:425 [inlined]
+│  [28] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, @Kwargs{}}, print_error::Bool)
+│     @ Distributed C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\process_messages.jl:70
+│  [29] #remotecall_fetch#158
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:450 [inlined]
+│  [30] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:449 [inlined]
+│  [31] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:492 [inlined]
+│  [32] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:344
+│  [33] setup_http_listener (repeats 2 times)
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:342 [inlined]
+│  [34] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:313
+│  [35] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:333
+│  [36] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:124
+│  [37] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [38] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [39] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:469
+│  [40] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:401
+│ 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:356
+┌ Info: 2024-10-03 20:09:44 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-03 20:09:46 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 20:10:40 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 20:10:52 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 20:11:02 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-03 20:11:27 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-03 20:11:32 GenieTools already loaded, skipping
+└ @ Main C:\Users\renil\.julia\packages\GenieFramework\uTvhU\src\GenieFramework.jl:121
+┌ Info: 2024-10-03 20:11:45 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-03 20:11:46 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-03 20:15:11 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-04 17:38:02 C:\Users\renil\TCC\ForestInventory\lib\AreaFixa.jl no longer exists, deleted all methods
+└ @ Revise C:\Users\renil\.julia\packages\Revise\vyLVb\src\packagedef.jl:677
+┌ Info: 2024-10-04 17:38:03 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 17:39:09 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 17:40:24 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 17:40:29 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
