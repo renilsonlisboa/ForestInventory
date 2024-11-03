@@ -5,7 +5,7 @@ using GenieFramework, DataFrames, CSV, Random, PlotlyBase
 @genietools
 
 # Define onde serão alocados os arquivos upados
-const FILE_PATH = joinpath("src/public", "uploads")
+const FILE_PATH = joinpath("public", "uploads")
 mkpath(FILE_PATH)
 
 
@@ -20,10 +20,10 @@ mkpath(FILE_PATH)
     @out process_swampling = ["Amostragem Aleatória Simples", "Amostragem Estratificada", "Amostragem Sistemática", "Amostragem em Dois Estágios", "Amostragem em Conglomerados", "Amostragem Sistemática com Múltiplos Inícios Aleatórios", "Amostragem Independente", "Amostragem com Repetição Total", "Amostragem com Repetição Dupla", "Amostragem com Repetição Parcial"]
     @in selected_process = ""
 
-    @out variables = names(CSV.read("src/exemplo/de.csv", DataFrame))
+    @out variables = names(CSV.read("exemplo/de.csv", DataFrame))
     @in selected_variable = ""
 
-    @out upload_datasets = readdir("src/public/uploads/")
+    @out upload_datasets = readdir("public/uploads/")
     @in selected_dataset = ""
 
     @in plot_area = ""
@@ -56,7 +56,7 @@ mkpath(FILE_PATH)
         if !isempty(fileuploads)
             @info "Arquivo importado: " fileuploads
             filename = fileuploads["name"]
-            upload_datasets = readdir("src/public/uploads/")
+            upload_datasets = readdir("public/uploads/")
             try
                 isdir(FILE_PATH) || mkpath(FILE_PATH)
                 mv(fileuploads["path"], joinpath(FILE_PATH, filename), force=true)
@@ -68,7 +68,7 @@ mkpath(FILE_PATH)
             fileuploads = Dict{AbstractString,AbstractString}()
         end
         upfiles = readdir(FILE_PATH)
-        upload_datasets = readdir("src/public/uploads/")
+        upload_datasets = readdir("public/uploads/")
     end
     @event uploaded begin
         @info "uploaded"
@@ -87,10 +87,10 @@ mkpath(FILE_PATH)
 
     @onchange selected_dataset begin
         if selected_dataset === ""
-            variables = names(CSV.read("src/exemplo/de.csv", DataFrame))
+            variables = names(CSV.read("exemplo/de.csv", DataFrame))
         else
-            variables = names(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame))
-            Table_data = DataTable(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame))
+            variables = names(CSV.read("public/uploads/$(selected_dataset)", DataFrame))
+            Table_data = DataTable(CSV.read("public/uploads/$(selected_dataset)", DataFrame))
         end
     end
 
@@ -217,7 +217,7 @@ mkpath(FILE_PATH)
     # Alterna a visibilidade das DIVS no HTML conforme a seleção dos processos
     @onchange selected_process begin
         if selected_process === ""
-            variables = names(CSV.read("src/exemplo/de.csv", DataFrame))
+            variables = names(CSV.read("exemplo/de.csv", DataFrame))
         elseif selected_process === "Amostragem Aleatória Simples"
             selected_unit_visibility = true
             selected_variable_visibility = true
@@ -392,36 +392,36 @@ mkpath(FILE_PATH)
     @onbutton Button_process begin
         if selected_method === "Área Fixa"
             if selected_process === "Amostragem Aleatória Simples"
-                Result_Table = DataTable(FixedArea.AAS(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, ear, alpha, selected_variable, selected_unit))
+                Result_Table = DataTable(FixedArea.AAS(CSV.read("public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, ear, alpha, selected_variable, selected_unit))
             elseif selected_process === "Amostragem com Repetição Dupla"
-                Result_Table = DataTable(FixedArea.AD(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, selected_ocasiao_1, selected_ocasiao_2, alpha, selected_unit))
+                Result_Table = DataTable(FixedArea.AD(CSV.read("public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, selected_ocasiao_1, selected_ocasiao_2, alpha, selected_unit))
             elseif selected_process === "Amostragem com Repetição Parcial"
-                Result_Table = DataTable(FixedArea.ARP(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, selected_unit_ad, selected_sub_unit, selected_ocasiao_1, selected_ocasiao_2, alpha, selected_unit))
+                Result_Table = DataTable(FixedArea.ARP(CSV.read("public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, selected_unit_ad, selected_sub_unit, selected_ocasiao_1, selected_ocasiao_2, alpha, selected_unit))
             elseif selected_process === "Amostragem com Repetição Total"
-                Result_Table = DataTable(FixedArea.ART(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area_occasion_1, inventoried_area_occasion_2, selected_unit_ad, selected_ocasiao_1, selected_ocasiao_2, alpha, selected_unit))
+                Result_Table = DataTable(FixedArea.ART(CSV.read("public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area_occasion_1, inventoried_area_occasion_2, selected_unit_ad, selected_ocasiao_1, selected_ocasiao_2, alpha, selected_unit))
             elseif selected_process === "Amostragem em Conglomerados"
-                Result_Table = DataTable(FixedArea.CONGL(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, ear, alpha, selected_unit))
+                Result_Table = DataTable(FixedArea.CONGL(CSV.read("public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, ear, alpha, selected_unit))
             elseif selected_process === "Amostragem em Dois Estágios"
-                Result_Table = DataTable(FixedArea.DE(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, ear, alpha, n_potencial, selected_unit))
+                Result_Table = DataTable(FixedArea.DE(CSV.read("public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, ear, alpha, n_potencial, selected_unit))
             elseif selected_process === "Amostragem Estratificada"
-                Result_Table = DataTable(FixedArea.ESTRAT(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, ear, alpha, selected_estrato, selected_subestrato, selected_variable, selected_unit))
+                Result_Table = DataTable(FixedArea.ESTRAT(CSV.read("public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, ear, alpha, selected_estrato, selected_subestrato, selected_variable, selected_unit))
             elseif selected_process === "Amostragem Independente"
-                Result_Table = DataTable(FixedArea.IND(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area_occasion_1, inventoried_area_occasion_2, selected_unit_ad, selected_ocasiao_1, selected_ocasiao_2, alpha, selected_unit))
+                Result_Table = DataTable(FixedArea.IND(CSV.read("public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area_occasion_1, inventoried_area_occasion_2, selected_unit_ad, selected_ocasiao_1, selected_ocasiao_2, alpha, selected_unit))
             elseif selected_process === "Amostragem Sistemática com Múltiplos Inícios Aleatórios"
-                Result_Table = DataTable(FixedArea.MULTI(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, ear, alpha, selected_unit))
+                Result_Table = DataTable(FixedArea.MULTI(CSV.read("public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, ear, alpha, selected_unit))
             elseif selected_process === "Amostragem Sistemática"
-                Result_Table = DataTable(FixedArea.SIST(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, ear, alpha, selected_unit))
+                Result_Table = DataTable(FixedArea.SIST(CSV.read("public/uploads/$(selected_dataset)", DataFrame), plot_area, inventoried_area, ear, alpha, selected_unit))
             else
             end
         elseif selected_method === "Bitterlich"
-            Resultados = (Bitterlich.CalcBitterlich(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame), selected_num_arvores_column, selected_dap_column, selected_distance_column, selected_vol_column, fab))
+            Resultados = (Bitterlich.CalcBitterlich(CSV.read("public/uploads/$(selected_dataset)", DataFrame), selected_num_arvores_column, selected_dap_column, selected_distance_column, selected_vol_column, fab))
             Result_Table = DataTable(Resultados[1])
             Result_Table_Arvores_Duvidosas = DataTable(Resultados[2])
             Resulta_Table_Filter_Data = DataTable(Resultados[3])
         elseif selected_method === "Prodan"
-            Result_Table = DataTable(Prodan.CalcProdan(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame), selected_dap_column, Distância, selected_vol_column))
+            Result_Table = DataTable(Prodan.CalcProdan(CSV.read("public/uploads/$(selected_dataset)", DataFrame), selected_dap_column, Distância, selected_vol_column))
         elseif selected_method === "Strand"
-            Result_Table = DataTable(Strand.CalcStrand(CSV.read("src/public/uploads/$(selected_dataset)", DataFrame), selected_dap_column, fab))
+            Result_Table = DataTable(Strand.CalcStrand(CSV.read("public/uploads/$(selected_dataset)", DataFrame), selected_dap_column, fab))
         elseif selected_method === "3P"
             println("$(selected_method)")
         else
