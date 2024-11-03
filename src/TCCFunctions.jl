@@ -6,7 +6,8 @@ using GenieFramework, DataFrames, CSV, Random, PlotlyBase
 export RunApp
 
     function RunApp()
-        GenieFramework.loadapp()
+        Genie.loadapp("src/")
+        up()
     end
 
 end
