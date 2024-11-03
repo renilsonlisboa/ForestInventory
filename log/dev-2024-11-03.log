@@ -82,3 +82,14 @@
 └ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\y3eEt\src\Servers.jl:382
 ┌ Info: 2024-11-03 19:29:12 uploaded
 └ @ Main.TCCFunctions.App C:\Users\renil\.julia\dev\TCCFunctions\src\app.jl:74
+┌ Info: 2024-11-03 19:29:17 Arquivo importado: 
+│   fileuploads = Dict{AbstractString, AbstractString}("name" => "TRABALHO VENDA_CÃ\u82MBIO.rtf", "channel" => "RCBPGCDYXIZHTYEULFKXVISUMGQTHWPW", "path" => "C:\\Users\\renil\\AppData\\Local\\Temp\\jl_T5L9Di\\jl_F5A4.tmp")
+└ @ Main.TCCFunctions.App C:\Users\renil\.julia\dev\TCCFunctions\src\app.jl:57
+┌ Info: 2024-11-03 19:29:18 uploaded
+└ @ Main.TCCFunctions.App C:\Users\renil\.julia\dev\TCCFunctions\src\app.jl:74
+┌ Info: 2024-11-03 19:29:25 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-03 19:29:25 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-03 19:29:25 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
