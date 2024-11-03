@@ -1,0 +1,13 @@
+name = "TCCFunctions"
+uuid = "3ff2cf41-83c0-4ad8-89c5-b261aa1afc74"
+authors = ["renilsonlisboa <renilsonlisboajunior@gmail.com> and contributors"]
+version = "0.1.0"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[compat]
+julia = "1.11"
+
+[targets]
+test = ["Test"]
