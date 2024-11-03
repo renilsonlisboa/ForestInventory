@@ -1,0 +1,522 @@
+┌ Info: 2024-10-04 17:42:44 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-04 17:42:45 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 17:43:06 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-04 17:43:06 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-04 17:44:49 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 17:45:43 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 17:45:48 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-04 17:45:59 UndefVarError(:FixedArea, Main)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-04 17:46:44 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-04 17:46:56 UndefVarError(:FixedArea, Main)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-04 17:48:23 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-04 17:48:24 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 17:48:31 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-04 17:48:31 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-04 17:50:48 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 17:51:29 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 17:54:15 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 17:56:22 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 17:57:05 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 17:58:13 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 17:58:51 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 17:59:16 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 18:02:05 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 19:35:45 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 19:37:11 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 19:37:26 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 19:49:08 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 19:49:32 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 19:50:25 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 19:50:39 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 19:51:13 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 19:52:35 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 19:53:23 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 19:53:33 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 19:53:37 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 19:55:31 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 19:58:40 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-04 19:58:41 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Error: 2024-10-04 20:00:12 Failed to revise C:\Users\renil\TCC\ForestInventory\app.jl
+│   exception = Revise.ReviseEvalException("C:\\Users\\renil\\TCC\\ForestInventory\\app.jl:109", UndefVarError(:scatter, Main), Any[(top-level scope at app.jl:109, 1)])
+└ @ Revise C:\Users\renil\.julia\packages\Revise\vyLVb\src\packagedef.jl:733
+┌ Warning: 2024-10-04 20:00:13 The running code does not match the saved version for the following files:
+│ 
+│   C:\Users\renil\TCC\ForestInventory\app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise C:\Users\renil\.julia\packages\Revise\vyLVb\src\packagedef.jl:846
+┌ Info: 2024-10-04 20:00:17 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-04 20:00:17 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Error: 2024-10-04 20:00:24 UndefVarError: `trace1` not defined in `Main`
+│ Suggestion: check for spelling errors or missing imports.
+│ Stacktrace:
+│   [1] var"##Main_ReactiveModel!#259"()
+│     @ Main C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1058
+│   [2] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│   [3] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│   [4] |>
+│     @ .\operators.jl:926 [inlined]
+│   [5] init(t::Type{Main_ReactiveModel}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool, always_register_channels::Bool)
+│     @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:514
+│   [6] init_from_storage(t::Type{Main_ReactiveModel}; channel::Nothing, kwargs::@Kwargs{})
+│     @ Stipple.ModelStorage.Sessions C:\Users\renil\.julia\packages\Stipple\8huSn\src\ModelStorage.jl:25
+│   [7] init_from_storage(t::Type{Main_ReactiveModel})
+│     @ Stipple.ModelStorage.Sessions C:\Users\renil\.julia\packages\Stipple\8huSn\src\ModelStorage.jl:22
+│   [8] top-level scope
+│     @ C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:768
+│   [9] eval
+│     @ .\boot.jl:430 [inlined]
+│  [10] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:1194
+│  [11] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [12] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [13] (::Stipple.Pages.var"#7#10"{FilePathsBase.WindowsPath, String, @Kwargs{}})()
+│     @ Stipple.Pages C:\Users\renil\.julia\packages\Stipple\8huSn\src\Pages.jl:68
+│  [14] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:547
+│  [15] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:172
+│  [16] route_request
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:147 [inlined]
+│  [17] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:300
+│  [18] handle_request
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:292 [inlined]
+│  [19] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\macros.jl:123
+│  [20] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [21] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [22] #153
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:425 [inlined]
+│  [23] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, @Kwargs{}}, print_error::Bool)
+│     @ Distributed C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\process_messages.jl:70
+│  [24] #remotecall_fetch#158
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:450 [inlined]
+│  [25] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:449 [inlined]
+│  [26] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:492 [inlined]
+│  [27] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:344
+│  [28] setup_http_listener (repeats 2 times)
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:342 [inlined]
+│  [29] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:313
+│  [30] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:333
+│  [31] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:124
+│  [32] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [33] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [34] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:469
+│  [35] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:401
+│ 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:356
+┌ Error: 2024-10-04 20:00:58 Failed to revise C:\Users\renil\TCC\ForestInventory\app.jl
+│   exception = Revise.ReviseEvalException("C:\\Users\\renil\\TCC\\ForestInventory\\app.jl:14", UndefVarError(:scatter, Main), Any[(top-level scope at app.jl:14, 1)])
+└ @ Revise C:\Users\renil\.julia\packages\Revise\vyLVb\src\packagedef.jl:733
+┌ Info: 2024-10-04 20:01:00 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Error: 2024-10-04 20:01:02 UndefVarError: `trace1` not defined in `Main`
+│ Suggestion: check for spelling errors or missing imports.
+│ Stacktrace:
+│   [1] var"##Main_ReactiveModel!#259"()
+│     @ Main C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1058
+│   [2] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│   [3] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│   [4] |>
+│     @ .\operators.jl:926 [inlined]
+│   [5] init(t::Type{Main_ReactiveModel}; vue_app_name::String, endpoint::String, channel::Any, debounce::Int64, transport::Module, core_theme::Bool, always_register_channels::Bool)
+│     @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:514
+│   [6] init_from_storage(t::Type{Main_ReactiveModel}; channel::Nothing, kwargs::@Kwargs{})
+│     @ Stipple.ModelStorage.Sessions C:\Users\renil\.julia\packages\Stipple\8huSn\src\ModelStorage.jl:25
+│   [7] init_from_storage(t::Type{Main_ReactiveModel})
+│     @ Stipple.ModelStorage.Sessions C:\Users\renil\.julia\packages\Stipple\8huSn\src\ModelStorage.jl:22
+│   [8] top-level scope
+│     @ C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:768
+│   [9] eval
+│     @ .\boot.jl:430 [inlined]
+│  [10] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:1194
+│  [11] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [12] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [13] (::Stipple.Pages.var"#7#10"{FilePathsBase.WindowsPath, String, @Kwargs{}})()
+│     @ Stipple.Pages C:\Users\renil\.julia\packages\Stipple\8huSn\src\Pages.jl:68
+│  [14] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:547
+│  [15] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:172
+│  [16] route_request
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:147 [inlined]
+│  [17] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:300
+│  [18] handle_request
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:292 [inlined]
+│  [19] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\macros.jl:123
+│  [20] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [21] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [22] #153
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:425 [inlined]
+│  [23] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, @Kwargs{}}, print_error::Bool)
+│     @ Distributed C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\process_messages.jl:70
+│  [24] #remotecall_fetch#158
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:450 [inlined]
+│  [25] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:449 [inlined]
+│  [26] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:492 [inlined]
+│  [27] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:344
+│  [28] setup_http_listener (repeats 2 times)
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:342 [inlined]
+│  [29] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:313
+│  [30] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:333
+│  [31] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:124
+│  [32] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [33] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [34] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:469
+│  [35] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:401
+│ 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:356
+┌ Info: 2024-10-04 20:02:02 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-04 20:02:05 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 20:02:48 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-04 20:02:52 GenieTools already loaded, skipping
+└ @ Main C:\Users\renil\.julia\packages\GenieFramework\uTvhU\src\GenieFramework.jl:121
+┌ Info: 2024-10-04 20:03:18 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-04 20:03:18 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-04 20:50:30 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 20:50:53 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 20:51:21 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 20:52:08 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 20:52:33 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 20:54:07 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-04 20:54:13 MethodError(Core.kwcall, ((digits = 2,), round, "A população avaliada é considerada infinita", RoundingMode{:Nearest}()), 0x0000000000006e99)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-04 20:56:31 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-04 20:56:36 MethodError(Core.kwcall, ((digits = 2,), round, "A população avaliada é considerada infinita", RoundingMode{:Nearest}()), 0x0000000000006f1b)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-04 20:56:58 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-04 20:57:02 Server on 127.0.0.1:8000 closing
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:409
+┌ Info: 2024-10-04 20:57:07 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-04 20:57:07 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Warning: 2024-10-04 20:57:15 MethodError(Core.kwcall, ((digits = 2,), round, "A população avaliada é considerada infinita", RoundingMode{:Nearest}()), 0x0000000000006f9b)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-04 20:58:31 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-04 20:58:33 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 20:58:47 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-04 20:58:59 GenieTools already loaded, skipping
+└ @ Main C:\Users\renil\.julia\packages\GenieFramework\uTvhU\src\GenieFramework.jl:121
+┌ Info: 2024-10-04 20:59:17 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-04 20:59:18 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Warning: 2024-10-04 21:01:28 MethodError(Core.kwcall, ((digits = 2,), round, "A população avaliada é considerada infinita", RoundingMode{:Nearest}()), 0x0000000000006b4b)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-04 21:01:57 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 21:07:13 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Error: 2024-10-04 21:07:21 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for anonymous function "#157":
+│  [1] (::var"#157#162")(selected_method)
+│      @ C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:795
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─       Core.NewvarNode(:(@_3))
+│ │   %2  = selected_method === "Área Fixa"
+│ └──       goto #3 if not %2
+│ 2 ─       goto #4
+│ 3 ─ %5  = selected_method === ""
+│ └──       goto #5 if not %5
+│ 4 ┄ %7  = true
+│ │   %8  = Core.getfield(#self#, :__model__)
+│ │   %9  = Base.getproperty(%8, :visibility_visual)
+│ │         Base.setindex!(%9, %7)
+│ └──       goto #6
+│ 5 ─ %12 = false
+│ │   %13 = Core.getfield(#self#, :__model__)
+│ │   %14 = Base.getproperty(%13, :visibility_visual)
+│ └──       Base.setindex!(%14, %12)
+│ 6 ┄ %16 = ""
+│ │   %17 = Base.indexed_iterate(%16, 1)
+│ │   %18 = Core.getfield(%17, 1)
+│ │         @_3 = Core.getfield(%17, 2)
+│ │   %20 = @_3
+│ │   %21 = Base.indexed_iterate(%16, 2, %20)
+│ │   %22 = Core.getfield(%21, 1)
+│ │   %23 = Core.getfield(#self#, :__model__)
+│ │   %24 = Base.getproperty(%23, :selected_process)
+│ │         Base.setindex!(%24, %18)
+│ │   %26 = Core.getfield(#self#, :__model__)
+│ │   %27 = Base.getproperty(%26, :selected_unit)
+│ │         Base.setindex!(%27, %22)
+│ └──       return %16
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   Área Fixa
+│ 
+│   Exception:
+│   BoundsError("", 1)
+│ 
+│   exception = (BoundsError("", 1), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000001bb83557db9, Ptr{Nothing} @0x000001bb8356ff16, Ptr{Nothing} @0x000001bb83570143, Ptr{Nothing} @0x00007ffbba5a959b, Ptr{Nothing} @0x000001bb83522d0c, Ptr{Nothing} @0x000001bb8352382c, Ptr{Nothing} @0x000001bb8352388b, Ptr{Nothing} @0x000001bb8356fc87, Ptr{Nothing} @0x000001bb8356551e, Ptr{Nothing} @0x000001bb8356592b, Ptr{Nothing} @0x000001bbdc2a6c0f, Ptr{Nothing} @0x000001bbdc2a7175, Ptr{Nothing} @0x000001bbdc2a7265, Ptr{Nothing} @0x000001bbdc2a72a0, Ptr{Nothing} @0x000001bbdc28fb24, Ptr{Nothing} @0x000001bbdc28fb8b, Ptr{Nothing} @0x00007ffbba5a959b, Ptr{Nothing} @0x00007ffb7c1a2590, Ptr{Nothing} @0x00007ffb7c0408ed, Ptr{Nothing} @0x00007ffb7c1acc90, Ptr{Nothing} @0x000001bbdc28ead3, Ptr{Nothing} @0x000001bbdc28ebf3, Ptr{Nothing} @0x00007ffbba5a959b, Ptr{Nothing} @0x000001bbdc286921, Ptr{Nothing} @0x000001bbdc2893fe, Ptr{Nothing} @0x000001bbdc2898cb, Ptr{Nothing} @0x00007ffbba5c2e43])
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\stipple\mutators.jl:54
+┌ Error: 2024-10-04 21:07:28 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for anonymous function "#157":
+│  [1] (::var"#157#162")(selected_method)
+│      @ C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:795
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─       Core.NewvarNode(:(@_3))
+│ │   %2  = selected_method === "Área Fixa"
+│ └──       goto #3 if not %2
+│ 2 ─       goto #4
+│ 3 ─ %5  = selected_method === ""
+│ └──       goto #5 if not %5
+│ 4 ┄ %7  = true
+│ │   %8  = Core.getfield(#self#, :__model__)
+│ │   %9  = Base.getproperty(%8, :visibility_visual)
+│ │         Base.setindex!(%9, %7)
+│ └──       goto #6
+│ 5 ─ %12 = false
+│ │   %13 = Core.getfield(#self#, :__model__)
+│ │   %14 = Base.getproperty(%13, :visibility_visual)
+│ └──       Base.setindex!(%14, %12)
+│ 6 ┄ %16 = ""
+│ │   %17 = Base.indexed_iterate(%16, 1)
+│ │   %18 = Core.getfield(%17, 1)
+│ │         @_3 = Core.getfield(%17, 2)
+│ │   %20 = @_3
+│ │   %21 = Base.indexed_iterate(%16, 2, %20)
+│ │   %22 = Core.getfield(%21, 1)
+│ │   %23 = Core.getfield(#self#, :__model__)
+│ │   %24 = Base.getproperty(%23, :selected_process)
+│ │         Base.setindex!(%24, %18)
+│ │   %26 = Core.getfield(#self#, :__model__)
+│ │   %27 = Base.getproperty(%26, :selected_unit)
+│ │         Base.setindex!(%27, %22)
+│ └──       return %16
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   Bitterlich
+│ 
+│   Exception:
+│   BoundsError("", 1)
+│ 
+│   exception = (BoundsError("", 1), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x000001bb83557db9, Ptr{Nothing} @0x000001bb8356ff16, Ptr{Nothing} @0x000001bb83570143, Ptr{Nothing} @0x00007ffbba5a959b, Ptr{Nothing} @0x000001bb83522d0c, Ptr{Nothing} @0x000001bb8352382c, Ptr{Nothing} @0x000001bb8352388b, Ptr{Nothing} @0x000001bb8356fc87, Ptr{Nothing} @0x000001bb8356551e, Ptr{Nothing} @0x000001bb8356592b, Ptr{Nothing} @0x000001bbdc2a6c0f, Ptr{Nothing} @0x000001bbdc2a7175, Ptr{Nothing} @0x000001bbdc2a7265, Ptr{Nothing} @0x000001bbdc2a72a0, Ptr{Nothing} @0x000001bbdc28fb24, Ptr{Nothing} @0x000001bbdc28fb8b, Ptr{Nothing} @0x00007ffbba5a959b, Ptr{Nothing} @0x00007ffb7c1a2590, Ptr{Nothing} @0x00007ffb7c0408ed, Ptr{Nothing} @0x00007ffb7c1acc90, Ptr{Nothing} @0x000001bbdc28ead3, Ptr{Nothing} @0x000001bbdc28ebf3, Ptr{Nothing} @0x00007ffbba5a959b, Ptr{Nothing} @0x000001bbdc286921, Ptr{Nothing} @0x000001bbdc2893fe, Ptr{Nothing} @0x000001bbdc2898cb, Ptr{Nothing} @0x00007ffbba5c2e43])
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\stipple\mutators.jl:54
+┌ Info: 2024-10-04 21:07:36 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 21:09:20 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 21:09:31 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 21:09:55 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 21:10:13 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 21:12:12 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 21:13:54 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-04 21:16:58 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 10:41:05 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Error: 2024-10-05 10:52:20 Failed to revise C:\Users\renil\TCC\ForestInventory\app.jl
+│   exception = (LoadError("C:\\Users\\renil\\TCC\\ForestInventory\\app.jl", 131, MethodError(convert, (Symbol, :(__model__.selected_unit_vsibility[])), 0x000000000000753b)), Union{Ptr{Nothing}, Base.InterpreterIP}[])
+└ @ Revise C:\Users\renil\.julia\packages\Revise\vyLVb\src\packagedef.jl:735
+┌ Warning: 2024-10-05 10:52:21 The running code does not match the saved version for the following files:
+│ 
+│   C:\Users\renil\TCC\ForestInventory\app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise C:\Users\renil\.julia\packages\Revise\vyLVb\src\packagedef.jl:846
+┌ Error: 2024-10-05 10:52:22 LoadError: MethodError: Cannot `convert` an object of type Expr to an object of type Symbol
+│ The function `convert` exists, but no method is defined for this combination of argument types.
+│ 
+│ Closest candidates are:
+│   Symbol(::Any...)
+│    @ Base strings\basic.jl:229
+│   convert(::Type{Symbol}, !Matched::String)
+│    @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\stipple\converters.jl:1
+│   convert(::Type{T}, !Matched::T) where T
+│    @ Base Base.jl:126
+│ 
+│ Stacktrace:
+│   [1] setindex!(dd::LittleDict{Symbol, Expr, Vector{Symbol}, Vector{Expr}}, value::Expr, key::Expr)
+│     @ OrderedCollections C:\Users\renil\.julia\packages\OrderedCollections\9C4Uz\src\little_dict.jl:227
+│   [2] binding(expr::Expr, m::Module, mode::Any; source::LineNumberNode, reactive::Bool)
+│     @ Stipple.ReactiveTools C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:503
+│   [3] var"@in"(__source__::LineNumberNode, __module__::Module, expr::Any)
+│     @ Stipple.ReactiveTools C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:637
+│   [4] eval(m::Module, e::Any)
+│     @ Core .\boot.jl:430
+│   [5] top-level scope
+│     @ C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:759
+│   [6] eval
+│     @ .\boot.jl:430 [inlined]
+│   [7] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:1194
+│   [8] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│   [9] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [10] (::Stipple.Pages.var"#7#10"{FilePathsBase.WindowsPath, String, @Kwargs{}})()
+│     @ Stipple.Pages C:\Users\renil\.julia\packages\Stipple\8huSn\src\Pages.jl:68
+│  [11] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:547
+│  [12] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:172
+│  [13] route_request
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:147 [inlined]
+│  [14] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:300
+│  [15] handle_request
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:292 [inlined]
+│  [16] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\macros.jl:123
+│  [17] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [18] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [19] #153
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:425 [inlined]
+│  [20] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, @Kwargs{}}, print_error::Bool)
+│     @ Distributed C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\process_messages.jl:70
+│  [21] #remotecall_fetch#158
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:450 [inlined]
+│  [22] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:449 [inlined]
+│  [23] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:492 [inlined]
+│  [24] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:344
+│  [25] setup_http_listener (repeats 2 times)
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:342 [inlined]
+│  [26] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:313
+│  [27] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:333
+│  [28] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:124
+│  [29] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [30] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [31] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:469
+│  [32] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:401
+│ in expression starting at C:\Users\renil\TCC\ForestInventory\app.jl:131
+│ 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:356
+┌ Warning: 2024-10-05 10:52:22 Genie.WebChannels.ChannelNotFoundException("DBDOFPLFHVLBPWQZTMHMLUSDIPNNGQFG")
+└ @ Genie.WebChannels C:\Users\renil\.julia\packages\Genie\qPfMX\src\WebChannels.jl:259

@@ -1,0 +1,303 @@
+┌ Info: 2024-10-05 10:54:07 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-05 10:54:11 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 10:54:18 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-05 10:54:23 GenieTools already loaded, skipping
+└ @ Main C:\Users\renil\.julia\packages\GenieFramework\uTvhU\src\GenieFramework.jl:121
+┌ Info: 2024-10-05 10:54:29 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 10:55:00 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-05 10:55:00 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-05 10:55:20 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-05 10:55:23 GenieTools already loaded, skipping
+└ @ Main C:\Users\renil\.julia\packages\GenieFramework\uTvhU\src\GenieFramework.jl:121
+┌ Info: 2024-10-05 10:55:59 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 10:56:03 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 10:57:36 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 11:09:37 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 11:09:43 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 11:10:13 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 11:11:32 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 11:12:00 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 11:12:27 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 11:12:36 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 11:12:41 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 11:13:28 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 11:14:07 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 11:14:53 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 11:15:23 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 11:20:32 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 11:21:58 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Error: 2024-10-05 11:22:29 Failed to revise C:\Users\renil\TCC\ForestInventory\app.jl
+│   exception = (LoadError("C:\\Users\\renil\\TCC\\ForestInventory\\app.jl", 132, MethodError(convert, (Symbol, :(__model__.plot_area_visibility[])), 0x0000000000007591)), Union{Ptr{Nothing}, Base.InterpreterIP}[])
+└ @ Revise C:\Users\renil\.julia\packages\Revise\vyLVb\src\packagedef.jl:735
+┌ Warning: 2024-10-05 11:22:32 The running code does not match the saved version for the following files:
+│ 
+│   C:\Users\renil\TCC\ForestInventory\app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise C:\Users\renil\.julia\packages\Revise\vyLVb\src\packagedef.jl:846
+┌ Error: 2024-10-05 11:22:33 LoadError: MethodError: Cannot `convert` an object of type Expr to an object of type Symbol
+│ The function `convert` exists, but no method is defined for this combination of argument types.
+│ 
+│ Closest candidates are:
+│   Symbol(::Any...)
+│    @ Base strings\basic.jl:229
+│   convert(::Type{Symbol}, !Matched::String)
+│    @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\stipple\converters.jl:1
+│   convert(::Type{T}, !Matched::T) where T
+│    @ Base Base.jl:126
+│ 
+│ Stacktrace:
+│   [1] setindex!(dd::LittleDict{Symbol, Expr, Vector{Symbol}, Vector{Expr}}, value::Expr, key::Expr)
+│     @ OrderedCollections C:\Users\renil\.julia\packages\OrderedCollections\9C4Uz\src\little_dict.jl:227
+│   [2] binding(expr::Expr, m::Module, mode::Any; source::LineNumberNode, reactive::Bool)
+│     @ Stipple.ReactiveTools C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:503
+│   [3] var"@in"(__source__::LineNumberNode, __module__::Module, expr::Any)
+│     @ Stipple.ReactiveTools C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:637
+│   [4] eval(m::Module, e::Any)
+│     @ Core .\boot.jl:430
+│   [5] top-level scope
+│     @ C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:759
+│   [6] eval
+│     @ .\boot.jl:430 [inlined]
+│   [7] (::Stipple.ReactiveTools.var"#32#34"{Module, Vector{Any}})()
+│     @ Stipple.ReactiveTools C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:1194
+│   [8] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│   [9] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [10] (::Stipple.Pages.var"#7#10"{FilePathsBase.WindowsPath, String, @Kwargs{}})()
+│     @ Stipple.Pages C:\Users\renil\.julia\packages\Stipple\8huSn\src\Pages.jl:68
+│  [11] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:547
+│  [12] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:172
+│  [13] route_request
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Router.jl:147 [inlined]
+│  [14] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:300
+│  [15] handle_request
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:292 [inlined]
+│  [16] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\macros.jl:123
+│  [17] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [18] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [19] #153
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:425 [inlined]
+│  [20] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, @Kwargs{}}, print_error::Bool)
+│     @ Distributed C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\process_messages.jl:70
+│  [21] #remotecall_fetch#158
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:450 [inlined]
+│  [22] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:449 [inlined]
+│  [23] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.0-rc3\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:492 [inlined]
+│  [24] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:344
+│  [25] setup_http_listener (repeats 2 times)
+│     @ C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:342 [inlined]
+│  [26] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:313
+│  [27] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:333
+│  [28] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:124
+│  [29] #invokelatest#2
+│     @ .\essentials.jl:1054 [inlined]
+│  [30] invokelatest
+│     @ .\essentials.jl:1051 [inlined]
+│  [31] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing)
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:469
+│  [32] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:401
+│ in expression starting at C:\Users\renil\TCC\ForestInventory\app.jl:132
+│ 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:356
+┌ Info: 2024-10-05 11:23:01 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-05 11:24:52 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Error: 2024-10-05 12:16:10 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for anonymous function "#523":
+│  [1] (::var"#523#528")(selected_dataset)
+│      @ C:\Users\renil\.julia\packages\Stipple\8huSn\src\ReactiveTools.jl:795
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─ %1  = selected_dataset === ""
+│ └──       goto #3 if not %1
+│ 2 ─ %3  = Main.names
+│ │   %4  = CSV.read
+│ │   %5  = Main.DataFrame
+│ │   %6  = (%4)("exemplo/de.csv", %5)
+│ │   %7  = (%3)(%6)
+│ │   %8  = Core.getfield(#self#, :__model__)
+│ │   %9  = Base.getproperty(%8, :variables)
+│ │         Base.setindex!(%9, %7)
+│ └──       return %7
+│ 3 ─ %12 = Main.names
+│ │   %13 = CSV.read
+│ │   %14 = Base.string("public/uploads/", selected_dataset)
+│ │   %15 = Main.DataFrame
+│ │   %16 = (%13)(%14, %15)
+│ │   %17 = (%12)(%16)
+│ │   %18 = Core.getfield(#self#, :__model__)
+│ │   %19 = Base.getproperty(%18, :variables)
+│ │         Base.setindex!(%19, %17)
+│ │   %21 = Main.DataTable
+│ │   %22 = CSV.read
+│ │   %23 = Base.string("public/uploads/", selected_dataset)
+│ │   %24 = Main.DataFrame
+│ │   %25 = (%22)(%23, %24)
+│ │   %26 = (%21)(%25)
+│ │   %27 = Core.getfield(#self#, :__model__)
+│ │   %28 = Base.getproperty(%27, :Table_data)
+│ │         Base.setindex!(%28, %26)
+│ └──       return %26
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   Demonstrativa_Planejamento-Tributario_4.1 (1).xlsx
+│ 
+│   Exception:
+│   ArgumentError("Symbol name may not contain \\0")
+│ 
+│   exception = (ArgumentError("Symbol name may not contain \\0"), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007ffbba62d2f4, Ptr{Nothing} @0x00007ffbba5be9b9, Ptr{Nothing} @0x00007ffb8eddaba1, Ptr{Nothing} @0x00007ffb77040b43, Ptr{Nothing} @0x00007ffb77076fc0, Ptr{Nothing} @0x0000021b8b505c1a, Ptr{Nothing} @0x0000021b8b505e43, Ptr{Nothing} @0x0000021b8b4f80fa, Ptr{Nothing} @0x0000021b8b50451b, Ptr{Nothing} @0x0000021bab3d01a2, Ptr{Nothing} @0x0000021bab3d0a43, Ptr{Nothing} @0x00007ffbba5a959b, Ptr{Nothing} @0x0000021b9be0355c, Ptr{Nothing} @0x0000021b9be0407c, Ptr{Nothing} @0x0000021b9be040db, Ptr{Nothing} @0x0000021bab3cd46a, Ptr{Nothing} @0x0000021bab3c2d2e, Ptr{Nothing} @0x0000021bab3c313b, Ptr{Nothing} @0x0000021b9bd941af, Ptr{Nothing} @0x0000021b9bd94715, Ptr{Nothing} @0x0000021b9bd94805, Ptr{Nothing} @0x0000021b9bd94840, Ptr{Nothing} @0x0000021b9bd5ea54, Ptr{Nothing} @0x0000021b9bd5eabb, Ptr{Nothing} @0x00007ffbba5a959b, Ptr{Nothing} @0x00007ffb7c1a2590, Ptr{Nothing} @0x00007ffb7c0408ed, Ptr{Nothing} @0x00007ffb7c1acc90, Ptr{Nothing} @0x0000021b8b3d9da3, Ptr{Nothing} @0x0000021b8b3d9ec3, Ptr{Nothing} @0x00007ffbba5a959b, Ptr{Nothing} @0x0000021b8b3d3c31, Ptr{Nothing} @0x0000021b8b3d670e, Ptr{Nothing} @0x0000021b8b3d6bdb, Ptr{Nothing} @0x00007ffbba5c2e43])
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\stipple\mutators.jl:54
+┌ Info: 2024-10-05 12:17:50 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-05 12:20:43 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-05 12:23:45 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-05 12:23:46 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 12:24:07 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-05 12:24:07 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-05 12:27:21 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 12:28:07 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 12:31:22 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 12:32:57 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 12:39:01 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 12:39:28 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 12:40:22 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 12:40:37 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 12:40:53 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 12:47:22 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 12:47:33 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 12:47:45 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 13:02:56 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 13:03:05 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 20:29:55 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 20:33:19 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 20:37:41 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 20:53:22 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 20:57:57 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 20:58:25 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 20:59:01 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-05 21:00:39 UndefVarError(:Ocasião_1, Main)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-05 21:01:23 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 21:02:00 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 21:02:34 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 21:03:04 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 21:05:12 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-05 21:05:13 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-05 21:05:29 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-05 21:05:29 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Warning: 2024-10-05 21:06:45 UndefVarError(:Ocasião_1, Main)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-05 21:07:07 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-05 21:07:20 ArgumentError("column name \"Ocasião_1\" not found in the data frame; existing most similar names are: \"Ocasiao_1\" and \"Ocasiao_2\"")
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Warning: 2024-10-05 21:07:50 ArgumentError("column name \"Ocasião_1\" not found in the data frame; existing most similar names are: \"Ocasiao_1\" and \"Ocasiao_2\"")
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-05 21:09:02 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-06 10:00:42 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\qPfMX\src\Server.jl:182
+┌ Info: 2024-10-06 10:02:43 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-06 10:02:58 ArgumentError("column name \"\" not found in the data frame; existing most similar names are: \"n\"")
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-06 10:03:26 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-06 10:03:33 ArgumentError("column name \"\" not found in the data frame; existing most similar names are: \"n\"")
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-06 10:07:06 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-06 10:07:16 ArgumentError("column name \"\" not found in the data frame; existing most similar names are: \"n\"")
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Warning: 2024-10-06 10:07:55 ArgumentError("column name \"\" not found in the data frame; existing most similar names are: \"n\"")
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005

@@ -1,0 +1,71 @@
+┌ Info: 2024-10-19 07:49:57 Watching ["C:\\Users\\renil\\TCC\\ForestInventory"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-10-19 07:49:58 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-19 07:50:47 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\9Ar6i\src\Server.jl:182
+┌ Info: 2024-10-19 07:50:48 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-10-19 07:56:53 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-19 07:58:58 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-19 07:59:24 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-19 07:59:40 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-19 07:59:43 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-19 08:00:10 UndefVarError(:Ru, WriteDocx)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-19 08:00:16 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-19 08:00:21 UndefVarError(:DataFrame, Main.ExportDocs)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-19 08:00:36 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-19 08:00:49 MethodError(convert, (Vector{WriteDocx.TableRow}, 2×2 DataFrame
+│  Row │ x1     x2
+│      │ Int64  Int64
+│ ─────┼──────────────
+│    1 │     1      0
+│    2 │     2      0), 0x0000000000006f6f)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-19 08:02:09 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-19 08:02:14 MethodError(convert, (WriteDocx.TableRow, "Teste1"), 0x000000000000700a)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-19 08:02:39 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-19 08:02:42 MethodError(convert, (WriteDocx.TableRow, "Teste1"), 0x00000000000070a3)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\8huSn\src\Stipple.jl:1005
+┌ Info: 2024-10-19 08:05:56 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-19 12:00:54 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-10-19 12:01:04 C:\Users\renil\TCC\ForestInventory\lib\export.jl no longer exists, deleted all methods
+└ @ Revise C:\Users\renil\.julia\packages\Revise\8jqWV\src\packagedef.jl:677
+┌ Info: 2024-10-19 12:01:04 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-20 19:03:33 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\9Ar6i\src\Server.jl:182
+┌ Info: 2024-10-20 19:05:05 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-20 19:05:23 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-20 19:06:06 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-20 19:10:14 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-20 19:10:41 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-20 19:11:15 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-20 19:17:26 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-20 19:17:41 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-10-20 19:17:47 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
