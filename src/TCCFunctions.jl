@@ -1,12 +1,14 @@
 module TCCFunctions
 
 # Write your package code here.
-using GenieFramework, DataFrames, CSV, Random, PlotlyBase
+using Genie, GenieFramework, DataFrames, CSV, Random, PlotlyBase
+include(joinpath(@__DIR__, "src/app.jl")) # Amostragem Aleatória Simples
+@genietools
 
 export RunApp
 
     function RunApp()
-        Genie.loadapp("src/")
+        Genie.loadapp("src/.")
         up()
     end
 
