@@ -8,7 +8,8 @@ include(joinpath(@__DIR__, "app.jl")) # Amostragem Aleatória Simples
 export RunApp
 
     function RunApp()
-        Genie.loadapp(dirname(Base.pathof(TCCFunctions)))
+        println(dirname(@__FILE__))
+        Genie.loadapp(dirname(@__FILE__))
         up()
     end
 
