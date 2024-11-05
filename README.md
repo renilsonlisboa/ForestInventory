@@ -9,6 +9,15 @@
 
 <p align="justify"> O pacote ForestInventory.jl é um aplicativo desenvolvido em Linguagem Julia. Ele foi projetado para facilitar os processamentos dos processos de amostragem do inventário florestal. Nele é possível analisar 10 processos de amostragem do inventário florestal, que estão baseados no Livro de Inventário Florestal, 1997 de Sylvio Péllico Netto e Doádi Antônio Brena. Essa ferramenta tem o intuito de contribuir e facilitar o processamento de dados por pesquisadores, engenheiros florestais, estatísticos e pessoas que trabalhem com dados relacionados ao inventário florestal. Além disso, o seu uso é de livre acesso, possibilitando seu uso no ensino superior.</p>
 
+## Métodos de Amostragem
+
+- [Área Fixa](https://repositorio.ufsm.br/bitstream/handle/1/28263/DIS_PPGAAA_2023_NARDINI_CLAITON.pdf?sequence=1&isAllowed=y#page=60)
+- [Bitterlich](https://repositorio.ufsm.br/bitstream/handle/1/28263/DIS_PPGAAA_2023_NARDINI_CLAITON.pdf?sequence=1&isAllowed=y#page=63)
+- [Prodan](https://repositorio.ufsm.br/bitstream/handle/1/28263/DIS_PPGAAA_2023_NARDINI_CLAITON.pdf?sequence=1&isAllowed=y#page=66)
+- [Strand](https://repositorio.ufsm.br/bitstream/handle/1/28263/DIS_PPGAAA_2023_NARDINI_CLAITON.pdf?sequence=1&isAllowed=y#page=60)
+- [3-P](https://repositorio.ufsm.br/bitstream/handle/1/28263/DIS_PPGAAA_2023_NARDINI_CLAITON.pdf?sequence=1&isAllowed=y#page=6)
+
+
 ## Processos de Amostragem
 
 - [Amostragem Aleatória Simples](https://repositorio.ufsm.br/bitstream/handle/1/28263/DIS_PPGAAA_2023_NARDINI_CLAITON.pdf?sequence=1&isAllowed=y#page=60)
