@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bem-vindo</title>
+    <link rel="stylesheet" href="/css/theme.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c; /* Fundo escuro */
+            color: #cfcfcf; /* Texto claro */
+        }
+        .welcome-container {
+            text-align: center;
+            margin: 20px;
+        }
+        .logos-container {
+            display: flex;
+            justify-content: center; /* Centraliza as imagens */
+            align-items: center; /* Alinha verticalmente */
+            gap: 20px; /* Espaçamento entre as imagens */
+            position: fixed; /* Fixa no final da página */
+            bottom: 20px; /* Distância do rodapé */
+            width: 100%; /* Garante que ocupe toda a largura */
+            background-color: #1c1c1c; /* Fundo da seção */
+            padding: 10px 0; /* Espaçamento interno */
+        }
+        .logos-container img {
+            width: 50px; /* Tamanho do círculo */
+            height: 50px; /* Tamanho do círculo */
+            border-radius: 50%; /* Faz a imagem ficar circular */
+            object-fit: cover; /* Ajusta a imagem dentro do círculo */
+            border: 2px solid #cfcfcf; /* Adiciona uma borda fina */
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Bem-vindo à Plataforma de Inventário Florestal</h1>
+        <p>Esta é uma plataforma para processamento de inventário florestal.</p>
+    </div>
+
+    <!-- Div para exibir as logos em formato circular no final da página -->
+    <div class="logos-container">
+        <img src="/images/empresa1.png" alt="Logo Empresa 1">
+        <img src="/images/empresa3.png" alt="Logo Empresa 2">
+    </div>
+</body>
+</html>
