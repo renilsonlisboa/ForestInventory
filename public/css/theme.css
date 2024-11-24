@@ -1,3 +1,29 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  border: none; /* Remove qualquer borda */
+  box-shadow: none; /* Remove sombras que podem parecer bordas */
+}
+
+.stipple-core .st-module {
+  border: none !important; /* Remove borda ao redor dos módulos */
+}
+.st-module h3 {
+  margin-top: 40px; /* Mais espaço acima */
+  margin-bottom: 20px; /* Mais espaço abaixo */
+}
+
+.st-module p {
+  margin-bottom: 30px; /* Espaço extra após parágrafos */
+}
+
+.st-module ul {
+  margin-top: 20px; /* Espaçamento superior para listas */
+  margin-bottom: 30px; /* Espaçamento inferior */
+  list-style-type: disc; /* Apenas para melhor organização visual */
+}
+
 :root.stipple-core {
   --q-color-primary: #38bdf8;
   --q-color-secondary: #8ea8c3;
@@ -19,6 +45,11 @@
   --q-dark: var(--q-color-dark);
   --q-dark-page: #121212;
 }
+
+#imag {
+  color: #38bdf8; /* Azul claro */
+}
+
 :root.stipple-core {
   --st-text-1: #e6e6e6;
   --st-text-2: #575454;
@@ -31,20 +62,29 @@
   --st-skeleton: #e1e5ee;
   --st-slider--track: #cad2d2;
 }
-:root.stipple-core h1,
-:root.stipple-core h2,
-:root.stipple-core h3,
-:root.stipple-core h4,
-:root.stipple-core h5,
-:root.stipple-core h6 {
-  color: var(--q-primary);
-  font-weight: bold;
+:root.stipple-core h1{
+  text-align: center;
 }
+
+:root.stipple-core h3 {
+  margin-top: 30px; /* Adiciona espaço acima */
+  margin-bottom: 20px; /* Espaço abaixo */
+  color: var(--q-color-primary); /* Mantém o título destacado */
+}
+
+.st-module ul {
+  margin-bottom: 20px; /* Espaça as listas */
+}
+
+:root.stipple-core h4,
+
 :root.stipple-core h5 {
   font-size: 1.1rem;
 }
 :root.stipple-core h6 {
   font-size: 1rem;
+  color: var(--q-primary);
+  font-weight: bold;
 }
 :root.stipple-core h2 {
   font-size: 1.6rem;
@@ -55,6 +95,7 @@ body {
 }
 .stipple-core a {
   color: var(--q-color-primary);
+  font-size: 16;
 }
 
 .stipple-core .st-module {
@@ -63,6 +104,16 @@ body {
 }
 .stipple-core .q-btn {
   color: #000000 !important;
+}
+
+.st-module p{
+  font-size: 1.8rem;
+}
+
+.st-module a {
+  color: #ffffff !important; /* Cor dos itens da lista */
+  font-size: 1.6rem;
+  text-decoration: none !important;
 }
 
 .q-field__input,

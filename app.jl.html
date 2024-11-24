@@ -1,7 +1,12 @@
-<h1 id="imag">Forest Inventory</h1>
-<div class="row">
+<!DOCTYPE html>
+<html>
+
+<head>
+    <h1 id="imag">
+        Data Processing
+    </h1>
     <div class="st-col col-12 col-sm st-module">
-        <div id="ikjvk">
+        <div id="ikjvk" v-if="true">
             <q-uploader v-on:start="function(event) { handle_event(event, 'started') }" label="Upload CSV"
                 hide-upload-btn="" auto-upload="" v-on:failed="function(event) { handle_event(event, 'failed') }"
                 v-on:uploaded="function(event) { handle_event(event, 'uploaded') }" no-thumbnails=""
@@ -13,11 +18,10 @@
                 style="max-width: 95%; width: 95%; margin: 0 auto;" :max-file-size="upl_maxsize"
                 v-if="visibility_start_data"></q-uploader>
         </div>
-        <q-separator color="primary">
 
         </q-separator>
         <q-table flat="" bordered="" :columns="Resulta_Table_Filter_Data.columns" v-model="Table_data" title="Dados"
-            :data="Resulta_Table_Filter_Data.data" row-key="__id" v-if="visibility_start_data">
+            :data="Resulta_Table_Filter_Data.data" row-key="__id" v-if="true">
         </q-table>
 
         <q-table flat="" bordered="" :columns="Resulta_Table_Filter_Data.columns" v-model="Table_data"
@@ -33,241 +37,238 @@
             v-if="visibility_result">
         </q-table>
 
-        <plotly :data="plotdata" :layout="plotlayout" v-if="false">
-        </plotly>
-
-        <q-btn label="Return" v-on:click="Button_return = true" class="q-btn--night-theme">
+        <q-btn label="Return" v-if="false" v-on:click="Button_return = true" class="q-btn--night-theme">
         </q-btn>
-    </div>
 
-    <div class="st-col st-module col-3" v-if="true">
-        <h5>Definições<br></h5>
+        <div class="st-col st-module col-3" v-if="true">
+            <h5>Definições<br></h5>
 
-        <div style="display: flex; align-items: center;">
+            <div style="display: flex; align-items: center;">
 
-            <q-select id="method" v-model="selected_method" label="Método de Amostragem" :options="method_swampling"
-                style="flex-grow: 1;">
-            </q-select>
+                <q-select id="method" v-model="selected_method" label="Método de Amostragem" :options="method_swampling"
+                    style="flex-grow: 1;">
+                </q-select>
 
-            <q-icon name="help_outline" size="xs" class="q-ml-sm" color="primary" style="flex-shrink: 0;">
-                <q-tooltip>
-                    Selecione o método de amostragem desejado para o processamento dos dados.
-                </q-tooltip>
-            </q-icon>
+                <q-icon name="help_outline" size="xs" class="q-ml-sm" color="primary" style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Selecione o método de amostragem desejado para o processamento dos dados.
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+
+                <q-select id="process" v-model="selected_process" label="Processo de Amostragem"
+                    :options="process_swampling" v-if="selected_process_visibility" style="flex-grow: 1;">
+                </q-select>
+
+                <q-icon v-if="selected_process_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
+                    style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Selecione o processo de amostragem desejado para o processamento dos dados.
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+
+                <q-select id="dataset" v-model="selected_dataset" label="Dataset" :options="upload_datasets"
+                    v-if="selected_dataset_visibility" style="flex-grow: 1;">
+                </q-select>
+
+                <q-icon v-if="selected_dataset_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
+                    style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Selecione a base de dados desejada para o processamento do inventário.
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+
+                <q-select id="variable" v-model="selected_variable" label="Variável de Interesse" :options="variables"
+                    v-if="selected_variable_visibility" style="flex-grow: 1;">
+                </q-select>
+
+                <q-icon v-if="selected_variable_visibility" name="help_outline" size="xs" class="q-ml-sm"
+                    color="primary" style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Selecione a variável de interesse para o inventário.
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+
+                <q-select id="unit" v-model="selected_unit" label="Unidade" :options="unit"
+                    v-if="selected_unit_visibility" style="flex-grow: 1;">
+                </q-select>
+
+                <q-icon v-if="selected_unit_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
+                    style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Selecione a unidade de medida pertinente a variável de interesse para o inventário.
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+
+                <q-input type="text" id="plot_area" name="Area" label="Área da parcela (m²)" v-model="plot_area"
+                    v-if="plot_area_visibility" style="flex-grow: 1;" required>
+                </q-input>
+
+                <q-icon v-if="plot_area_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
+                    style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Informe a área da parcela em metros quadrados.
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <q-input type="text" id="inventoried_area" name="areainv" label="Área inventariada (ha)"
+                    v-model="inventoried_area" v-if="inventoried_area_visibility" style="flex-grow: 1;" required>
+                </q-input>
+
+                <q-icon v-if="inventoried_area_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
+                    style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Informe a área inventariada em hectares.
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <q-input type="text" id="ear" name="ear" label="Erro de amostragem requerido (%)" v-model="ear"
+                    v-if="ear_visibility" style="flex-grow: 1;" required>
+                </q-input>
+
+                <q-icon v-if="ear_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
+                    style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Informe o erro de amsotragem requerido em porcentagem.
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+                <q-input type="text" id="alpha" name="alpha" label="Alpha" v-model="alpha" v-if="alpha_visibility"
+                    style="flex-grow: 1;" required>
+                </q-input>
+
+                <q-icon v-if="alpha_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
+                    style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Informe o valor de alpha variando de 0.01 a 0.99.
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+
+                <q-select id="variable" v-model="selected_num_arvores_column" label="Númeração das Árvores"
+                    :options="variables" v-if="selected_num_arvores_column_visibility" style="flex-grow: 1;">
+                </q-select>
+
+                <q-icon v-if="selected_num_arvores_column_visibility" name="help_outline" size="xs" class="q-ml-sm"
+                    color="primary" style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Selecione a coluna do dataset referente a númeração das amostras.
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+
+                <q-select id="variable" v-model="selected_dap_column" label="DAP (cm)" :options="variables"
+                    v-if="selected_dap_column_visibility" style="flex-grow: 1;">
+                </q-select>
+
+                <q-icon v-if="selected_dap_column_visibility" name="help_outline" size="xs" class="q-ml-sm"
+                    color="primary" style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Selecione a coluna do dataset referente aos valores de diâmetro à altura do peito (cm).
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+
+            <div style="display: flex; align-items: center;">
+
+                <q-select id="variable" v-model="selected_distance_column" label="Distância (m)" :options="variables"
+                    v-if="selected_distance_column_visibility" style="flex-grow: 1;">
+                </q-select>
+
+                <q-icon v-if="selected_distance_column_visibility" name="help_outline" size="xs" class="q-ml-sm"
+                    color="primary" style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Selecione a coluna do dataset referente a distância medida em campo.
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+
+                <q-select id="variable" v-model="selected_vol_column" label="Volumes" :options="variables"
+                    v-if="selected_vol_column_visibility" style="flex-grow: 1;">
+                </q-select>
+
+                <q-icon v-if="selected_vol_column_visibility" name="help_outline" size="xs" class="q-ml-sm"
+                    color="primary" style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Selecione a colune do dataset referente ao volume individual (m³).
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+
+                <q-input type="text" id="FAB" name="FAB" label="FAB" v-model="fab" v-if="fab_visibility" required
+                    style="flex-grow: 1;">
+                </q-input>
+
+                <q-icon v-if="fab_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
+                    style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Informe o valor de FAB.
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+            <div style="display: flex; align-items: center;">
+
+                <q-input type="text" id="Distância" name="Distância" label="Distância" v-model="Distância"
+                    v-if="Distância_visibility" required style="flex-grow: 1;">
+                </q-input>
+
+                <q-icon v-if="Distância_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
+                    style="flex-shrink: 0;">
+                    <q-tooltip>
+                        Selecione a variável de interesse para o inventário.
+                    </q-tooltip>
+                </q-icon>
+            </div>
+
+            <q-select id="variable" v-model="selected_estrato" label="Estrato" :options="variables"
+                v-if="selected_estrato_visibility"></q-select>
+            <q-select id="variable" v-model="selected_subestrato" label="Subestrato" :options="variables"
+                v-if="selected_subestrato_visibility"></q-select>
+            <q-select id="variable" v-model="selected_unit_ad" label="Númeração das Amostras" :options="variables"
+                v-if="selected_unit_dropbox_visibility"></q-select>
+            <q-select id="variable" v-model="selected_sub_unit" label="Sub Unidade" :options="variables"
+                v-if="selected_subunit_dropbox_visibility"></q-select>
+            <q-select id="variable" v-model="selected_ocasiao_1" label="Ocasião 1" :options="variables"
+                v-if="selected_occasion_visibility"></q-select>
+            <q-select id="variable" v-model="selected_ocasiao_2" label="Ocasião 2" :options="variables"
+                v-if="selected_occasion_visibility"></q-select>
+            <q-input type="text" id="n_potencial" name="Area" label="Nº potencial de unidade secundárias"
+                v-model="n_potencial" v-if="n_potencial_visibility" required></q-input>
+            <q-input type="text" id="inventoried_area_occasion_1" name="areainv"
+                label="Área inventariada na ocasião 1 (ha)" v-model="inventoried_area_occasion_1"
+                v-if="inventoried_area_occasion_1_visibility" required></q-input>
+            <q-input type="text" id="inventoried_area_occasion_2" name="areainv"
+                label="Área inventariada na ocasião 2 (ha)" v-model="inventoried_area_occasion_2"
+                v-if="inventoried_area_occasion_2_visibility" required></q-input>
+            <q-btn label="Processar" v-on:click="Button_process = true" class="q-btn--night-theme"></q-btn>
         </div>
-
-        <div style="display: flex; align-items: center;">
-
-            <q-select id="process" v-model="selected_process" label="Processo de Amostragem"
-                :options="process_swampling" v-if="selected_process_visibility" style="flex-grow: 1;">
-            </q-select>
-
-            <q-icon v-if="selected_process_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
-                style="flex-shrink: 0;">
-                <q-tooltip>
-                    Selecione o processo de amostragem desejado para o processamento dos dados.
-                </q-tooltip>
-            </q-icon>
-        </div>
-
-        <div style="display: flex; align-items: center;">
-
-            <q-select id="dataset" v-model="selected_dataset" label="Dataset" :options="upload_datasets"
-                v-if="selected_dataset_visibility" style="flex-grow: 1;">
-            </q-select>
-
-            <q-icon v-if="selected_dataset_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
-                style="flex-shrink: 0;">
-                <q-tooltip>
-                    Selecione a base de dados desejada para o processamento do inventário.
-                </q-tooltip>
-            </q-icon>
-        </div>
-
-        <div style="display: flex; align-items: center;">
-
-            <q-select id="variable" v-model="selected_variable" label="Variável de Interesse" :options="variables"
-                v-if="selected_variable_visibility" style="flex-grow: 1;">
-            </q-select>
-
-            <q-icon v-if="selected_variable_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
-                style="flex-shrink: 0;">
-                <q-tooltip>
-                    Selecione a variável de interesse para o inventário.
-                </q-tooltip>
-            </q-icon>
-        </div>
-
-        <div style="display: flex; align-items: center;">
-
-            <q-select id="unit" v-model="selected_unit" label="Unidade" :options="unit" v-if="selected_unit_visibility"
-                style="flex-grow: 1;">
-            </q-select>
-
-            <q-icon v-if="selected_unit_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
-                style="flex-shrink: 0;">
-                <q-tooltip>
-                    Selecione a unidade de medida pertinente a variável de interesse para o inventário.
-                </q-tooltip>
-            </q-icon>
-        </div>
-
-        <div style="display: flex; align-items: center;">
-
-            <q-input type="text" id="plot_area" name="Area" label="Área da parcela (m²)" v-model="plot_area"
-                v-if="plot_area_visibility" style="flex-grow: 1;" required>
-            </q-input>
-
-            <q-icon v-if="plot_area_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
-                style="flex-shrink: 0;">
-                <q-tooltip>
-                    Informe a área da parcela em metros quadrados.
-                </q-tooltip>
-            </q-icon>
-        </div>
-
-        <div style="display: flex; align-items: center;">
-            <q-input type="text" id="inventoried_area" name="areainv" label="Área inventariada (ha)"
-                v-model="inventoried_area" v-if="inventoried_area_visibility" style="flex-grow: 1;" required>
-            </q-input>
-
-            <q-icon v-if="inventoried_area_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
-                style="flex-shrink: 0;">
-                <q-tooltip>
-                    Informe a área inventariada em hectares.
-                </q-tooltip>
-            </q-icon>
-        </div>
-
-        <div style="display: flex; align-items: center;">
-            <q-input type="text" id="ear" name="ear" label="Erro de amostragem requerido (%)" v-model="ear"
-                v-if="ear_visibility" style="flex-grow: 1;" required>
-            </q-input>
-
-            <q-icon v-if="ear_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
-                style="flex-shrink: 0;">
-                <q-tooltip>
-                    Informe o erro de amsotragem requerido em porcentagem.
-                </q-tooltip>
-            </q-icon>
-        </div>
-
-        <div style="display: flex; align-items: center;">
-            <q-input type="text" id="alpha" name="alpha" label="Alpha" v-model="alpha" v-if="alpha_visibility"
-                style="flex-grow: 1;" required>
-            </q-input>
-
-            <q-icon v-if="alpha_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
-                style="flex-shrink: 0;">
-                <q-tooltip>
-                    Informe o valor de alpha variando de 0.01 a 0.99.
-                </q-tooltip>
-            </q-icon>
-        </div>
-
-        <div style="display: flex; align-items: center;">
-
-            <q-select id="variable" v-model="selected_num_arvores_column" label="Númeração das Árvores"
-                :options="variables" v-if="selected_num_arvores_column_visibility" style="flex-grow: 1;">
-            </q-select>
-
-            <q-icon v-if="selected_num_arvores_column_visibility" name="help_outline" size="xs" class="q-ml-sm"
-                color="primary" style="flex-shrink: 0;">
-                <q-tooltip>
-                    Selecione a coluna do dataset referente a númeração das amostras.
-                </q-tooltip>
-            </q-icon>
-        </div>
-
-        <div style="display: flex; align-items: center;">
-
-            <q-select id="variable" v-model="selected_dap_column" label="DAP (cm)" :options="variables"
-                v-if="selected_dap_column_visibility" style="flex-grow: 1;">
-            </q-select>
-
-            <q-icon v-if="selected_dap_column_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
-                style="flex-shrink: 0;">
-                <q-tooltip>
-                    Selecione a coluna do dataset referente aos valores de diâmetro à altura do peito (cm).
-                </q-tooltip>
-            </q-icon>
-        </div>
-
-
-        <div style="display: flex; align-items: center;">
-
-            <q-select id="variable" v-model="selected_distance_column" label="Distância (m)" :options="variables"
-                v-if="selected_distance_column_visibility" style="flex-grow: 1;">
-            </q-select>
-
-            <q-icon v-if="selected_distance_column_visibility" name="help_outline" size="xs" class="q-ml-sm"
-                color="primary" style="flex-shrink: 0;">
-                <q-tooltip>
-                    Selecione a coluna do dataset referente a distância medida em campo.
-                </q-tooltip>
-            </q-icon>
-        </div>
-
-        <div style="display: flex; align-items: center;">
-
-            <q-select id="variable" v-model="selected_vol_column" label="Volumes" :options="variables"
-                v-if="selected_vol_column_visibility" style="flex-grow: 1;">
-            </q-select>
-
-            <q-icon v-if="selected_vol_column_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
-                style="flex-shrink: 0;">
-                <q-tooltip>
-                    Selecione a colune do dataset referente ao volume individual (m³).
-                </q-tooltip>
-            </q-icon>
-        </div>
-
-        <div style="display: flex; align-items: center;">
-
-            <q-input type="text" id="FAB" name="FAB" label="FAB" v-model="fab" v-if="fab_visibility" required
-                style="flex-grow: 1;">
-            </q-input>
-
-            <q-icon v-if="fab_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
-                style="flex-shrink: 0;">
-                <q-tooltip>
-                    Informe o valor de FAB.
-                </q-tooltip>
-            </q-icon>
-        </div>
-
-        <div style="display: flex; align-items: center;">
-
-            <q-input type="text" id="Distância" name="Distância" label="Distância" v-model="Distância"
-                v-if="Distância_visibility" required style="flex-grow: 1;">
-            </q-input>
-
-            <q-icon v-if="Distância_visibility" name="help_outline" size="xs" class="q-ml-sm" color="primary"
-                style="flex-shrink: 0;">
-                <q-tooltip>
-                    Selecione a variável de interesse para o inventário.
-                </q-tooltip>
-            </q-icon>
-        </div>
-
-        <q-select id="variable" v-model="selected_estrato" label="Estrato" :options="variables"
-            v-if="selected_estrato_visibility"></q-select>
-        <q-select id="variable" v-model="selected_subestrato" label="Subestrato" :options="variables"
-            v-if="selected_subestrato_visibility"></q-select>
-        <q-select id="variable" v-model="selected_unit_ad" label="Númeração das Amostras" :options="variables"
-            v-if="selected_unit_dropbox_visibility"></q-select>
-        <q-select id="variable" v-model="selected_sub_unit" label="Sub Unidade" :options="variables"
-            v-if="selected_subunit_dropbox_visibility"></q-select>
-        <q-select id="variable" v-model="selected_ocasiao_1" label="Ocasião 1" :options="variables"
-            v-if="selected_occasion_visibility"></q-select>
-        <q-select id="variable" v-model="selected_ocasiao_2" label="Ocasião 2" :options="variables"
-            v-if="selected_occasion_visibility"></q-select>
-        <q-input type="text" id="n_potencial" name="Area" label="Nº potencial de unidade secundárias"
-            v-model="n_potencial" v-if="n_potencial_visibility" required></q-input>
-        <q-input type="text" id="inventoried_area_occasion_1" name="areainv" label="Área inventariada na ocasião 1 (ha)"
-            v-model="inventoried_area_occasion_1" v-if="inventoried_area_occasion_1_visibility" required></q-input>
-        <q-input type="text" id="inventoried_area_occasion_2" name="areainv" label="Área inventariada na ocasião 2 (ha)"
-            v-model="inventoried_area_occasion_2" v-if="inventoried_area_occasion_2_visibility" required></q-input>
-        <q-btn label="Processar" v-on:click="Button_process = true" class="q-btn--night-theme"></q-btn>
-    </div>
-</div>

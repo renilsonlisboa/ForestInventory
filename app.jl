@@ -93,7 +93,7 @@ mkpath(FILE_PATH)
     end
 
     # Define a visibilidade das DIVS    
-    @in showUploader = true
+    @in showUploader = false
     @in visibility_visual = false
     @in selected_unit_visibility = false
     @in selected_variable_visibility = false
@@ -385,7 +385,7 @@ mkpath(FILE_PATH)
     # Define as funcionalidades do Button_process
     @in Button_return = false
     @in visibility_result = false
-    @in visibility_start_data = true
+    @in visibility_start_data = false
 
     @onbutton Button_process begin
         if selected_method === "Área Fixa"
@@ -437,4 +437,7 @@ mkpath(FILE_PATH)
 end
 
 # declare a route at / that'll render the HTML
-@page("/", "app.jl.html")
+@page("/ForestInventory", "welcome.jl.html")
+
+# declare a route at / that'll render the HTML
+@page("/DataProcessing", "app.jl.html")
