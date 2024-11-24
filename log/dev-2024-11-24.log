@@ -1,0 +1,93 @@
+┌ Info: 2024-11-24 06:15:57 Watching ["C:\\Users\\renil\\.julia\\dev\\TCCFunctions"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-11-24 06:15:58 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:16:04 
+│ Web Server starting at http://200.132.38.30:800 - press Ctrl/Cmd+C to stop the server. 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-11-24 06:16:49 
+│ Web Sockets server starting at 200.132.38.30:800 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-11-24 06:18:40 Watching ["C:\\Users\\renil\\.julia\\dev\\TCCFunctions"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-11-24 06:18:41 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:18:47 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-11-24 06:18:47 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sJD5V\src\Servers.jl:382
+┌ Info: 2024-11-24 06:19:55 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:20:01 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:20:23 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:20:50 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:21:08 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:21:11 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:21:20 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:21:25 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:21:29 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:23:15 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:23:31 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:23:37 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:23:42 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:23:47 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:26:46 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:27:16 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:27:23 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:27:39 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:28:01 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:28:14 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:28:29 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:28:45 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:28:53 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:29:23 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:29:53 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:30:00 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:30:05 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:30:10 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:30:13 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:30:18 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:30:22 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:30:25 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:30:28 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:32:05 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:32:10 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:32:15 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-24 06:32:28 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22

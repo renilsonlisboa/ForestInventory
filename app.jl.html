@@ -40,7 +40,7 @@
         <q-btn label="Return" v-if="false" v-on:click="Button_return = true" class="q-btn--night-theme">
         </q-btn>
 
-        <div class="st-col st-module col-3" v-if="true">
+        <div id="dados_informados" class="st-col st-module col-3" v-if="true">
             <h5>Definições<br></h5>
 
             <div style="display: flex; align-items: center;">
@@ -272,3 +272,6 @@
                 v-if="inventoried_area_occasion_2_visibility" required></q-input>
             <q-btn label="Processar" v-on:click="Button_process = true" class="q-btn--night-theme"></q-btn>
         </div>
+</head>
+
+</html>

@@ -87,7 +87,7 @@ body, html {
   font-weight: bold;
 }
 :root.stipple-core h2 {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 body {
@@ -107,12 +107,12 @@ body {
 }
 
 .st-module p{
-  font-size: 1.8rem;
+  font-size: 1.25rem;
 }
 
 .st-module a {
   color: #ffffff !important; /* Cor dos itens da lista */
-  font-size: 1.6rem;
+  font-size: 1.15rem;
   text-decoration: none !important;
 }
 
@@ -220,6 +220,31 @@ svg .draglayer {
 }
 
 .q-btn--night-theme:active {
-  background-color: #1f1f1f; /* Fundo mais escuro ao clicar */
+  background-color: white; /* Fundo mais escuro ao clicar */
   border-color: #666666; /* Cor da borda mais clara ao clicar */
+}
+.capsule-button { 
+  display: inline-block; 
+  border-radius: 50px; /* formato de cápsula */ 
+  background-color: white; /* tom mais escuro ao passar o mouse */ 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* efeito de sombra */
+  color: white; /* cor do texto branca */
+  padding: 10px 20px; /* ajuste de tamanho interno */
+  text-align: center; 
+  text-decoration: none; 
+  font-size: 18px; 
+  font-weight: bold; 
+  transition: background-color 0.3s, box-shadow 0.3s; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* leve sombra */
+  position: relative;
+  top: 170px;
+} 
+
+.capsule-button:hover { 
+  background-color: #2c3e50; /* tom escuro */ 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* leve sombra */
+} 
+
+.capsule-button:active { 
+  background-color: #34495e;
 }
