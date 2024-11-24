@@ -166,7 +166,25 @@ body {
   background-color: #cccccc10;
   border: none;
 }
+.container {
+  display: flex; /* Coloca os itens lado a lado */
+  gap: 20px; /* Espaçamento entre as divisões */
+  padding: 10px; /* Espaçamento interno opcional */
+}
 
+.table-container {
+  flex: 2; /* A tabela ocupa mais espaço */
+  border: 1px solid #ddd; /* Borda opcional para visualizar melhor */
+  padding: 10px;
+  background-color: #fff; /* Fundo opcional */
+}
+
+.uploader-container {
+  flex: 1; /* O uploader ocupa menos espaço */
+  border: 1px solid #ddd; /* Borda opcional para visualizar melhor */
+  padding: 10px;
+  background-color: #f9f9f9; /* Fundo opcional */
+}
 *::-webkit-scrollbar-thumb {
   border-radius: 5px;
   /* background-color: var(--q-color-primary); */
