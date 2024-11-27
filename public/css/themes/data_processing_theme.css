@@ -11,6 +11,37 @@
     background-color: #fff; /* Fundo opcional */
   }
 
+  #dados_informados {
+    flex: 1; /* Define que ocupa menos espaço */
+    max-width: 300px; /* Limita a largura máxima, se necessário */
+    padding: 10px; /* Espaçamento interno */
+    background-color: #f9f9f9; /* Opcional: cor de fundo */
+    overflow-y: auto; /* Adiciona rolagem vertical se o conteúdo exceder o tamanho */
+  }
+  #layout-container {
+    display: flex; /* Habilita o layout flexbox */
+    gap: 20px; /* Espaçamento entre os elementos */
+    height: 100%; /* Garante que ocupe a altura total */
+}
+
+#dados_informados {
+    flex: 0 0 200px; /* Fixa o tamanho para aproximadamente 200px de largura */
+    max-width: 300px; /* Limita o tamanho máximo */
+    overflow-y: auto; /* Permite rolagem vertical se o conteúdo for maior que o espaço */
+    background-color: #f9f9f9; /* Cor de fundo opcional */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda opcional */
+}
+
+#dados_iniciais {
+    flex: 1; /* O restante do espaço será ocupado por esta div */
+    background-color: #fff; /* Fundo branco opcional */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda opcional */
+    overflow-y: auto; /* Para rolagem, se necessário */
+}
+  
+
   .uploader-container {
     flex: 1; /* O uploader ocupa menos espaço */
     border: 1px solid #ddd; /* Borda opcional para visualizar melhor */

@@ -86,9 +86,11 @@ mkpath(FILE_PATH)
     @onchange selected_dataset begin
         if selected_dataset === ""
             variables = names(CSV.read("exemplo/de.csv", DataFrame))
+            data_table_visibility = false
         else
             variables = names(CSV.read("public/uploads/$(selected_dataset)", DataFrame))
             Table_data = DataTable(CSV.read("public/uploads/$(selected_dataset)", DataFrame))
+            data_table_visibility = true
         end
     end
 
@@ -117,6 +119,7 @@ mkpath(FILE_PATH)
     @in selected_vol_column_visibility = false
     @in selected_num_arvores_column_visibility = false
     @in Distância_visibility = false
+    @in data_table_visibility = false
 
     
     # Apresenta ou oculta os dropbox "Processo de Amostragem" e "Formato da Parcela" quando selecionado
