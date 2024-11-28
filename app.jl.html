@@ -241,48 +241,46 @@
                 <q-input type="text" id="inventoried_area_occasion_2" name="areainv"
                     label="Área inventariada na ocasião 2 (ha)" v-model="inventoried_area_occasion_2"
                     v-if="inventoried_area_occasion_2_visibility" required></q-input>
-                <q-btn label="Processar" v-on:click="Button_process = true" class="q-btn--night-theme"></q-btn>
             </div>
             <!-- Div para a Tabela -->
             <div id="dados_iniciais" class="table-container">
-                <div style="flex: 1;">
-                    <q-table flat="" bordered="" :columns="Resulta_Table_Filter_Data.columns" v-model="Table_data"
-                        title="Dados" :data="Resulta_Table_Filter_Data.data" row-key="__id" v-if="data_table_visibility">
+                <div style="flex: 1;" v-if="visibility_start_data">
+                    <q-table flat="" bordered="" :columns="Table_data.columns" v-model="Table_data" title="Dados"
+                        :data="Table_data.data" row-key="__id" rows-per-page="8">
                     </q-table>
                 </div>
+
+                <div class="uploader-container" v-if="false">
+                    <q-uploader v-on:start="function(event) { handle_event(event, 'started') }"
+                        hide-upload-btn="" auto-upload=""
+                        v-on:failed="function(event) { handle_event(event, 'failed') }"
+                        v-on:uploaded="function(event) { handle_event(event, 'uploaded') }" no-thumbnails=""
+                        v-on:removed="function(event) { handle_event(event, 'removed') }"
+                        v-on:finish="function(event) { handle_event(event, 'finished') }"
+                        :url="'/____/upload/' + channel_"
+                        v-on:rejected="function(event) { handle_event(event, 'rejected') }" max-files="10"
+                        v-on:uploading="function(event) { handle_event(event, 'uploading') }" multiple="multiple"
+                        :accept="upl_acceptext" v-on:added="function(event) { handle_event(event, 'added') }"
+                        style="max-width: 95%; width: 95%; margin: 0 auto;" :max-file-size="upl_maxsize">
+                    </q-uploader>
+                </div>
             </div>
-            <div class="uploader-container" v-if="false">
-                <q-uploader v-on:start="function(event) { handle_event(event, 'started') }" label="Upload CSV"
-                    hide-upload-btn="" auto-upload="" v-on:failed="function(event) { handle_event(event, 'failed') }"
-                    v-on:uploaded="function(event) { handle_event(event, 'uploaded') }" no-thumbnails=""
-                    v-on:removed="function(event) { handle_event(event, 'removed') }"
-                    v-on:finish="function(event) { handle_event(event, 'finished') }" :url="'/____/upload/' + channel_"
-                    v-on:rejected="function(event) { handle_event(event, 'rejected') }" max-files="10"
-                    v-on:uploading="function(event) { handle_event(event, 'uploading') }" multiple="multiple"
-                    :accept="upl_acceptext" v-on:added="function(event) { handle_event(event, 'added') }"
-                    style="max-width: 95%; width: 95%; margin: 0 auto;" :max-file-size="upl_maxsize">
-                </q-uploader>
-            </div>
+
+            <q-table flat="" bordered="" :columns="Result_Table.columns" v-model="Table_data" title="Resultados"
+                :data="Result_Table.data" row-key="__id" v-if="true">
+            </q-table>
+
+            <q-table flat="" bordered="" :columns="Result_Table_Arvores_Duvidosas.columns" v-model="Table_data"
+                title="Classificação Árvores Duvidosas" :data="Result_Table_Arvores_Duvidosas.data" row-key="__id"
+                v-if="false">
+            </q-table>
         </div>
-
-        <q-table flat="" bordered="" :columns="Resulta_Table_Filter_Data.columns" v-model="Table_data"
-            title="Resultados" :data="Resulta_Table_Filter_Data.data" row-key="__id" v-if="visibility_result">
-        </q-table>
-
-        <q-table flat="" bordered="" :columns="Result_Table.columns" v-model="Table_data" title="Resultados"
-            :data="Result_Table.data" row-key="__id" v-if="visibility_result">
-        </q-table>
-
-        <q-table flat="" bordered="" :columns="Result_Table_Arvores_Duvidosas.columns" v-model="Table_data"
-            title="Classificação Árvores Duvidosas" :data="Result_Table_Arvores_Duvidosas.data" row-key="__id"
-            v-if="visibility_result">
-        </q-table>
-
-        <q-btn label="Return" v-if="false" v-on:click="Button_return = true" class="q-btn--night-theme">
+    </div>
+    <div id="buttons" style="padding: 10px;">
+        <q-btn label="Processar" v-on:click="Button_process = true" class="q-btn--night-theme"></q-btn>
+        <q-btn label="Importar dados" v-if="true" v-on:click="openUploader" class="q-btn--night-theme"></q-btn>
+        <q-btn label="Retornar" v-if="true" v-on:click="Button_return = true" class="q-btn--night-theme">
         </q-btn>
-
-    </div>
-    </div>
     </div>
     <div id="footer" style="text-align: center; padding: 0px;">
         <p style="color: var(--st-text-1); margin-bottom: 10px;">Colaboradores

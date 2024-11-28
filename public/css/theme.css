@@ -23,6 +23,111 @@ body, html {
   margin-bottom: 30px; /* Espaçamento inferior */
   list-style-type: disc; /* Apenas para melhor organização visual */
 }
+/* Estilo para tabelas com aparência consistente */
+.q-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  color: var(--st-text-1); /* Cor do texto */
+  background-color: var(--st-dashboard-module); /* Fundo claro */
+  border: 1px solid var(--st-dashboard-line); /* Borda suave */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra similar ao botão */
+  border-radius: 8px; /* Borda arredondada */
+  overflow: hidden; /* Para elementos fora do limite */
+}
+
+/* Cabeçalho da tabela */
+.q-table th {
+  background-color: var(--q-color-primary); /* Cor primária como fundo */
+  color: #ffffff; /* Texto branco */
+  text-transform: uppercase; /* Texto em maiúsculas */
+  font-weight: bold; /* Texto em negrito */
+  padding: 12px 15px; /* Espaçamento */
+  text-align: left; /* Alinhamento */
+}
+
+/* Células da tabela */
+.q-table td {
+  padding: 12px 15px; /* Espaçamento interno */
+  text-align: left; /* Alinhamento padrão */
+  border: 1px solid var(--st-dashboard-line); /* Borda interna */
+}
+
+/* Linhas alternadas */
+.q-table tr:nth-child(even) {
+  background-color: #f8f9fa; /* Fundo claro */
+}
+
+/* Efeito hover */
+.q-table tr:hover {
+  background-color: #e6f7ff; /* Fundo azul claro ao passar o mouse */
+  transition: background-color 0.3s ease; /* Suavidade na transição */
+}
+
+/* Legenda da tabela */
+.q-table caption {
+  caption-side: top;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 10px 0;
+  color: var(--q-color-secondary);
+  text-align: center;
+}
+
+/* Borda arredondada na tabela inteira */
+.q-table {
+  border-radius: 12px; /* Arredondamento da borda */
+}
+
+/* Responsividade para tabelas */
+.q-table-wrapper {
+  overflow-x: auto; /* Adiciona rolagem horizontal para tabelas grandes */
+  margin: 10px 0;
+}
+
+/* Estilo para linhas de destaque */
+.q-table tr.active-row {
+  background-color: #ffe8e8; /* Fundo para a linha ativa */
+  font-weight: bold;
+}
+
+/* Configuração para que o contêiner ocupe toda a página */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contêiner que envolve a tabela */
+.table-container {
+  flex: 1; /* Faz o contêiner crescer para ocupar o espaço restante */
+  display: flex;
+  flex-direction: column;
+}
+
+/* A tabela dentro do contêiner */
+.q-table-wrapper {
+  flex: 1; /* Faz a tabela ocupar o espaço disponível */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Impede elementos fora dos limites */
+}
+
+.q-table {
+  flex: 1; /* Permite que a tabela preencha o contêiner */
+  width: 100%; /* Faz a tabela ocupar toda a largura */
+  border-collapse: collapse;
+  font-size: 1em;
+  font-family: Arial, sans-serif;
+  color: var(--st-text-1); /* Cor do texto */
+  background-color: var(--st-dashboard-module); /* Fundo claro */
+  border: 1px solid var(--st-dashboard-line); /* Borda */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+}
 
 :root.stipple-core {
   --q-color-primary: #38bdf8;

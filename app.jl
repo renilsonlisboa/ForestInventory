@@ -11,7 +11,7 @@ mkpath(FILE_PATH)
 @app begin
     # we first declare reactive variables to hold the state of the interactive UI components
     # for the select menu, we need a list of station codes, and a variable to hold the selected station code
-    @out method_swampling = ["Área Fixa", "Bitterlich", "Prodan", "Strand", "3P"]
+    @out method_swampling = ["", "Área Fixa", "Bitterlich", "Prodan", "Strand", "3P"]
     @in selected_method = ""
 
     # same for the metrics
@@ -68,6 +68,7 @@ mkpath(FILE_PATH)
         upfiles = readdir(FILE_PATH)
         upload_datasets = readdir("public/uploads/")
     end
+    
     @event uploaded begin
         @info "uploaded"
         notify(__model__, "Arquivo Importado")
@@ -77,23 +78,7 @@ mkpath(FILE_PATH)
         notify(__model__, "Falha ao Importar")
     end
 
-    @in showUploadModal = true
-    @out Table_data = DataTable()
-    @out Result_Table = DataTable()
-    @out Result_Table_Arvores_Duvidosas = DataTable()
-    @out Resulta_Table_Filter_Data = DataTable()
-
-    @onchange selected_dataset begin
-        if selected_dataset === ""
-            variables = names(CSV.read("exemplo/de.csv", DataFrame))
-            data_table_visibility = false
-        else
-            variables = names(CSV.read("public/uploads/$(selected_dataset)", DataFrame))
-            Table_data = DataTable(CSV.read("public/uploads/$(selected_dataset)", DataFrame))
-            data_table_visibility = true
-        end
-    end
-
+    
     # Define a visibilidade das DIVS    
     @in showUploader = false
     @in visibility_visual = false
@@ -119,7 +104,28 @@ mkpath(FILE_PATH)
     @in selected_vol_column_visibility = false
     @in selected_num_arvores_column_visibility = false
     @in Distância_visibility = false
-    @in data_table_visibility = false
+    @in showUploadModal = true
+    @out Table_data = DataTable()
+    @out Result_Table = DataTable()
+    @out Result_Table_Arvores_Duvidosas = DataTable()
+    @out Resulta_Table_Filter_Data = DataTable()
+    # Define as funcionalidades do Button_process
+    @in Button_process = false
+    # Define as funcionalidades do Button_process
+    @in Button_return = false
+    @in visibility_result = false
+    @in visibility_start_data = false
+
+    @onchange selected_dataset begin
+        if selected_dataset === ""
+            variables = names(CSV.read("exemplo/de.csv", DataFrame))
+            visibility_start_data = false
+        else
+            variables = names(CSV.read("public/uploads/$(selected_dataset)", DataFrame))
+            Table_data = DataTable(CSV.read("public/uploads/$(selected_dataset)", DataFrame))
+            visibility_start_data = true
+        end     
+    end
 
     
     # Apresenta ou oculta os dropbox "Processo de Amostragem" e "Formato da Parcela" quando selecionado
@@ -247,7 +253,6 @@ mkpath(FILE_PATH)
             selected_unit_visibility = true
             selected_variable_visibility = false
             selected_dataset_visibility = true
-            
             selected_occasion_visibility = true
             selected_subunit_dropbox_visibility = true
             selected_unit_dropbox_visibility = true
@@ -383,12 +388,7 @@ mkpath(FILE_PATH)
     @out plotdata = [trace1, trace2]
     @out plotlayout = layout2
 
-    # Define as funcionalidades do Button_process
-    @in Button_process = false
-    # Define as funcionalidades do Button_process
-    @in Button_return = false
-    @in visibility_result = false
-    @in visibility_start_data = false
+
 
     @onbutton Button_process begin
         if selected_method === "Área Fixa"

@@ -130,3 +130,440 @@
 └ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
 ┌ Info: 2024-11-27 19:52:53 Listening on: 127.0.0.1:8000, thread id: 1
 └ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\y3eEt\src\Servers.jl:382
+┌ Info: 2024-11-27 19:56:11 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 19:57:04 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 19:58:10 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 19:58:24 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 19:59:36 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:00:26 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:00:55 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-11-27 20:01:01 ArgumentError("column name :Volume not found in the data frame")
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\z5YII\src\Stipple.jl:1005
+┌ Info: 2024-11-27 20:01:34 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:02:03 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:02:07 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:03:11 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:04:42 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:05:02 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:07:14 Watching ["C:\\Users\\renil\\.julia\\dev\\TCCFunctions"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-11-27 20:07:15 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:07:50 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-11-27 20:07:50 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\y3eEt\src\Servers.jl:382
+┌ Info: 2024-11-27 20:10:51 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:11:05 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Error: 2024-11-27 20:11:13 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for anonymous function "#297":
+│  [1] (::var"#297#303")(selected_dataset)
+│      @ C:\Users\renil\.julia\packages\Stipple\z5YII\src\ReactiveTools.jl:795
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─       Core.NewvarNode(:(visibility_start_data))
+│ │   %2  = selected_dataset === ""
+│ └──       goto #3 if not %2
+│ 2 ─ %4  = Main.names
+│ │   %5  = CSV.read
+│ │   %6  = Main.DataFrame
+│ │   %7  = (%5)("exemplo/de.csv", %6)
+│ │   %8  = (%4)(%7)
+│ │   %9  = Core.getfield(#self#, :__model__)
+│ │   %10 = Base.getproperty(%9, :variables)
+│ │         Base.setindex!(%10, %8)
+│ │   %12 = false
+│ │         visibility_start_data = %12
+│ └──       return %12
+│ 3 ─ %15 = Main.names
+│ │   %16 = CSV.read
+│ │   %17 = Base.string("public/uploads/", selected_dataset)
+│ │   %18 = Main.DataFrame
+│ │   %19 = (%16)(%17, %18)
+│ │   %20 = (%15)(%19)
+│ │   %21 = Core.getfield(#self#, :__model__)
+│ │   %22 = Base.getproperty(%21, :variables)
+│ │         Base.setindex!(%22, %20)
+│ │   %24 = Main.DataTable
+│ │   %25 = CSV.read
+│ │   %26 = Base.string("public/uploads/", selected_dataset)
+│ │   %27 = Main.DataFrame
+│ │   %28 = (%25)(%26, %27)
+│ │   %29 = (%24)(%28)
+│ │   %30 = Core.getfield(#self#, :__model__)
+│ │   %31 = Base.getproperty(%30, :Table_data)
+│ │         Base.setindex!(%31, %29)
+│ │         visibility_start_data = true
+│ │   %34 = Main.pritnln
+│ │   %35 = (%34)("foi")
+│ └──       return %35
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   Prodan.csv
+│ 
+│   Exception:
+│   UndefVarError(:pritnln, Main)
+│ 
+│   exception = (UndefVarError(:pritnln, Main), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007ff87b90d4bc, Ptr{Nothing} @0x00007ff87b8995a9, Ptr{Nothing} @0x0000028c80ac6481, Ptr{Nothing} @0x0000028c80ac6723, Ptr{Nothing} @0x00007ff87b88959b, Ptr{Nothing} @0x0000028c80a63fbc, Ptr{Nothing} @0x0000028c80a64adc, Ptr{Nothing} @0x0000028c80a64b3b, Ptr{Nothing} @0x0000028c80ac5ace, Ptr{Nothing} @0x0000028c80ab8407, Ptr{Nothing} @0x0000028c80ab881b, Ptr{Nothing} @0x0000028c890b456f, Ptr{Nothing} @0x0000028c890ba6e5, Ptr{Nothing} @0x0000028c890ba7d5, Ptr{Nothing} @0x0000028c890ba810, Ptr{Nothing} @0x0000028c890a7134, Ptr{Nothing} @0x0000028c890a719b, Ptr{Nothing} @0x00007ff87b88959b, Ptr{Nothing} @0x00007ff850f02300, Ptr{Nothing} @0x00007ff850ed62cd, Ptr{Nothing} @0x00007ff850efc80a, Ptr{Nothing} @0x0000028c890a3e53, Ptr{Nothing} @0x0000028c890a3f73, Ptr{Nothing} @0x00007ff87b88959b, Ptr{Nothing} @0x0000028c8909e981, Ptr{Nothing} @0x0000028c890a0f1e, Ptr{Nothing} @0x0000028c890a13eb, Ptr{Nothing} @0x00007ff87b8a2e03])
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\z5YII\src\stipple\mutators.jl:54
+┌ Info: 2024-11-27 20:11:30 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:12:04 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Error: 2024-11-27 20:12:11 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for anonymous function "#333":
+│  [1] (::var"#333#339")(selected_dataset)
+│      @ C:\Users\renil\.julia\packages\Stipple\z5YII\src\ReactiveTools.jl:795
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─       Core.NewvarNode(:(visibility_start_data))
+│ │   %2  = selected_dataset === ""
+│ └──       goto #3 if not %2
+│ 2 ─ %4  = Main.names
+│ │   %5  = CSV.read
+│ │   %6  = Main.DataFrame
+│ │   %7  = (%5)("exemplo/de.csv", %6)
+│ │   %8  = (%4)(%7)
+│ │   %9  = Core.getfield(#self#, :__model__)
+│ │   %10 = Base.getproperty(%9, :variables)
+│ │         Base.setindex!(%10, %8)
+│ │   %12 = false
+│ │         visibility_start_data = %12
+│ └──       return %12
+│ 3 ─ %15 = Main.names
+│ │   %16 = CSV.read
+│ │   %17 = Base.string("public/uploads/", selected_dataset)
+│ │   %18 = Main.DataFrame
+│ │   %19 = (%16)(%17, %18)
+│ │   %20 = (%15)(%19)
+│ │   %21 = Core.getfield(#self#, :__model__)
+│ │   %22 = Base.getproperty(%21, :variables)
+│ │         Base.setindex!(%22, %20)
+│ │   %24 = Main.DataTable
+│ │   %25 = CSV.read
+│ │   %26 = Base.string("public/uploads/", selected_dataset)
+│ │   %27 = Main.DataFrame
+│ │   %28 = (%25)(%26, %27)
+│ │   %29 = (%24)(%28)
+│ │   %30 = Core.getfield(#self#, :__model__)
+│ │   %31 = Base.getproperty(%30, :Table_data)
+│ │         Base.setindex!(%31, %29)
+│ │         visibility_start_data = true
+│ │   %34 = Main.show
+│ │   %35 = Main.visibility_result
+│ │   %36 = (%34)(%35)
+│ └──       return %36
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   Strand2.csv
+│ 
+│   Exception:
+│   UndefVarError(:visibility_result, Main)
+│ 
+│   exception = (UndefVarError(:visibility_result, Main), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007ff87b90d4bc, Ptr{Nothing} @0x00007ff87b8995a9, Ptr{Nothing} @0x0000028ca8e17ae5, Ptr{Nothing} @0x0000028ca8e17d93, Ptr{Nothing} @0x00007ff87b88959b, Ptr{Nothing} @0x0000028c80a63fbc, Ptr{Nothing} @0x0000028c80a64adc, Ptr{Nothing} @0x0000028c80a64b3b, Ptr{Nothing} @0x0000028ca8e1713e, Ptr{Nothing} @0x0000028ca8e09a87, Ptr{Nothing} @0x0000028ca8e09e9b, Ptr{Nothing} @0x0000028c890b456f, Ptr{Nothing} @0x0000028c890ba6e5, Ptr{Nothing} @0x0000028c890ba7d5, Ptr{Nothing} @0x0000028c890ba810, Ptr{Nothing} @0x0000028c890a7134, Ptr{Nothing} @0x0000028c890a719b, Ptr{Nothing} @0x00007ff87b88959b, Ptr{Nothing} @0x00007ff850f02300, Ptr{Nothing} @0x00007ff850ed62cd, Ptr{Nothing} @0x00007ff850efc80a, Ptr{Nothing} @0x0000028c890a3e53, Ptr{Nothing} @0x0000028c890a3f73, Ptr{Nothing} @0x00007ff87b88959b, Ptr{Nothing} @0x0000028c8909e981, Ptr{Nothing} @0x0000028c890a0f1e, Ptr{Nothing} @0x0000028c890a13eb, Ptr{Nothing} @0x00007ff87b8a2e03])
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\z5YII\src\stipple\mutators.jl:54
+┌ Info: 2024-11-27 20:12:36 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Error: 2024-11-27 20:12:42 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 1 method for anonymous function "#351":
+│  [1] (::var"#351#357")(selected_dataset)
+│      @ C:\Users\renil\.julia\packages\Stipple\z5YII\src\ReactiveTools.jl:795
+│   Core.CodeInfo[CodeInfo(
+│ 1 ─       Core.NewvarNode(:(visibility_start_data))
+│ │   %2  = selected_dataset === ""
+│ └──       goto #3 if not %2
+│ 2 ─ %4  = Main.names
+│ │   %5  = CSV.read
+│ │   %6  = Main.DataFrame
+│ │   %7  = (%5)("exemplo/de.csv", %6)
+│ │   %8  = (%4)(%7)
+│ │   %9  = Core.getfield(#self#, :__model__)
+│ │   %10 = Base.getproperty(%9, :variables)
+│ │         Base.setindex!(%10, %8)
+│ │   %12 = false
+│ │         visibility_start_data = %12
+│ └──       return %12
+│ 3 ─ %15 = Main.names
+│ │   %16 = CSV.read
+│ │   %17 = Base.string("public/uploads/", selected_dataset)
+│ │   %18 = Main.DataFrame
+│ │   %19 = (%16)(%17, %18)
+│ │   %20 = (%15)(%19)
+│ │   %21 = Core.getfield(#self#, :__model__)
+│ │   %22 = Base.getproperty(%21, :variables)
+│ │         Base.setindex!(%22, %20)
+│ │   %24 = Main.DataTable
+│ │   %25 = CSV.read
+│ │   %26 = Base.string("public/uploads/", selected_dataset)
+│ │   %27 = Main.DataFrame
+│ │   %28 = (%25)(%26, %27)
+│ │   %29 = (%24)(%28)
+│ │   %30 = Core.getfield(#self#, :__model__)
+│ │   %31 = Base.getproperty(%30, :Table_data)
+│ │         Base.setindex!(%31, %29)
+│ │         visibility_start_data = true
+│ │   %34 = Main.visibility_result
+│ │   %35 = Main.println(%34)
+│ └──       return %35
+│ )]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   aas (1).csv
+│ 
+│   Exception:
+│   UndefVarError(:visibility_result, Main)
+│ 
+│   exception = (UndefVarError(:visibility_result, Main), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007ff87b90d4bc, Ptr{Nothing} @0x00007ff87b8995a9, Ptr{Nothing} @0x0000028ca8e48b45, Ptr{Nothing} @0x0000028ca8e48df7, Ptr{Nothing} @0x00007ff87b88959b, Ptr{Nothing} @0x0000028c80a63fbc, Ptr{Nothing} @0x0000028c80a64adc, Ptr{Nothing} @0x0000028c80a64b3b, Ptr{Nothing} @0x0000028ca8e4819e, Ptr{Nothing} @0x0000028ca8e38d87, Ptr{Nothing} @0x0000028ca8e3919b, Ptr{Nothing} @0x0000028c890b456f, Ptr{Nothing} @0x0000028c890ba6e5, Ptr{Nothing} @0x0000028c890ba7d5, Ptr{Nothing} @0x0000028c890ba810, Ptr{Nothing} @0x0000028c890a7134, Ptr{Nothing} @0x0000028c890a719b, Ptr{Nothing} @0x00007ff87b88959b, Ptr{Nothing} @0x00007ff850f02300, Ptr{Nothing} @0x00007ff850ed62cd, Ptr{Nothing} @0x00007ff850efc80a, Ptr{Nothing} @0x0000028c890a3e53, Ptr{Nothing} @0x0000028c890a3f73, Ptr{Nothing} @0x00007ff87b88959b, Ptr{Nothing} @0x0000028c8909e981, Ptr{Nothing} @0x0000028c890a0f1e, Ptr{Nothing} @0x0000028c890a13eb, Ptr{Nothing} @0x00007ff87b8a2e03])
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\z5YII\src\stipple\mutators.jl:54
+┌ Info: 2024-11-27 20:13:00 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:14:20 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:14:36 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:14:54 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-11-27 20:18:21 Watching ["C:\\Users\\renil\\.julia\\dev\\TCCFunctions"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-11-27 20:18:22 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:18:35 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-11-27 20:18:35 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\y3eEt\src\Servers.jl:382
+┌ Info: 2024-11-27 20:20:51 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-11-27 20:21:07 MethodError(Float64, (nothing,), 0x0000000000006cc3)
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\z5YII\src\Stipple.jl:1005
+┌ Info: 2024-11-27 20:22:28 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:22:32 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:22:52 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:24:10 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:25:14 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:25:29 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:25:57 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:26:14 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:26:36 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:28:44 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:28:46 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:30:11 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:30:47 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:31:25 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:32:12 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:32:25 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:35:25 Watching ["C:\\Users\\renil\\.julia\\dev\\TCCFunctions"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-11-27 20:35:27 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:35:34 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-11-27 20:35:34 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\y3eEt\src\Servers.jl:382
+┌ Info: 2024-11-27 20:37:15 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:39:54 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:40:01 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:41:08 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:41:52 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:47:07 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:50:42 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:50:47 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:51:10 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:54:37 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:57:10 Watching ["C:\\Users\\renil\\.julia\\dev\\TCCFunctions"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-11-27 20:57:11 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 20:57:22 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-11-27 20:57:22 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\y3eEt\src\Servers.jl:382
+┌ Info: 2024-11-27 21:00:54 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:01:02 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:01:30 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:01:34 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:02:55 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:03:35 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:03:37 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:04:08 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:04:37 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:04:45 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:05:45 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:06:26 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:06:54 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:07:01 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:07:09 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:07:16 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:07:27 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:09:23 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:17:35 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:20:27 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:20:56 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:21:17 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:21:45 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:21:59 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:22:22 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:22:26 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:22:43 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:23:20 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:23:25 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:24:55 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:25:00 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:25:09 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:25:48 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:25:53 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:27:04 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:27:07 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:27:14 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:27:18 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:27:30 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:29:20 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:29:47 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:30:30 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:30:59 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:31:31 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:31:42 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:33:41 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:35:33 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:36:06 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:36:12 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:36:41 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:37:03 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:38:05 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:38:28 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:38:40 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:39:44 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:44:11 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:44:22 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:44:32 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:45:39 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:45:51 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:46:01 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:46:03 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-11-27 21:46:18 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
