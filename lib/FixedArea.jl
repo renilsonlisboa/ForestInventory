@@ -4,6 +4,7 @@ using DataFrames
 using Statistics
 using Distributions
 using CSV
+using XLSX
 
 export AAS, AD, ARP, ART, CONGL, DE, ESTRAT, IND, MULTI, SIST
 
@@ -69,7 +70,7 @@ export AAS, AD, ARP, ART, CONGL, DE, ESTRAT, IND, MULTI, SIST
         
         #Limite do intervalo de confiança para o total   
         LIItotal = ((N*Media)-N*(t*(DesvPad/sqrt(NumUni))*sqrt((1-(NumUni/N)))))/Conversor #Inferior
-        LIStotal = ((N*Media)+N*(t*(DesvPad/sqrt(NumUni))*sqrt((1-(NumUni/N))))) #Inferior
+        LIStotal = ((N*Media)+N*(t*(DesvPad/sqrt(NumUni))*sqrt((1-(NumUni/N)))))/Conversor #Inferior
         ConfMin = Media-(t*(DesvPad/sqrt(NumUni))*sqrt((1-(NumUni/N)))) #Estimativa mínima de confiança
         
         #Tabela com os resultados
@@ -84,8 +85,11 @@ export AAS, AD, ARP, ART, CONGL, DE, ESTRAT, IND, MULTI, SIST
         "Limite superior do intervalo de confiança para o total ($(unit))", "Erro padrão relativo (%)", "Área da população (ha)", "Erro da amostragem absoluto ($(unit)/ha)", "Erro padrão ($(unit)/ha)", "Desvio padrão ($(unit)/ha)", 
         "Variância ($(unit)/ha)²", "Variância da média ($(unit)/ha)²", "Variância da média relativa (%)", "Coeficiente de variação (%)", "Limite de erro da amostragem requerido", "Estimativa mínima de confiança ($(unit)/ha)",
         "Fator de correção", "População", "Número total de unidades amostrais da população", 
-        "Nível de significância (α)"], Valores= round.([Media, LII, LIS, ValTotal, LIItotal, LIStotal, ErroPadRel, Area, ErroAmostAbs, ErroPad, DesvPad, Variancia, VarMed, VarMedRel, CV, LE, EAR, FatorCorr, Tamanho_da_amostra, N, α], digits = 2))
+        "Nível de significância (α)", "População", "Observação"], Valores= vcat(round.([Media, LII, LIS, ValTotal, LIItotal, LIStotal, ErroPadRel, Area, ErroAmostAbs, ErroPad, DesvPad, Variancia, VarMed, VarMedRel, CV, LE, EAR, FatorCorr, Tamanho_da_amostra, N, α], digits = 2), [População, Observação]))
      
+        XLSX.writetable(("AAS.xlsx"), Resultados=(collect(DataFrames.eachcol(Resultados)),
+        DataFrames.names(Resultados))) #Exportar para o Excel
+
         return Resultados
     end
 

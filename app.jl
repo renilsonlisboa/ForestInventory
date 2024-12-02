@@ -1,5 +1,5 @@
 # the app.jl file is the main entry point to the application. It is a bridge between the UI and the data processing logic.
-using GenieFramework, DataFrames, CSV, Random, PlotlyBase
+using GenieFramework, DataFrames, CSV, Random, PlotlyBase, XLSX
 @genietools
 
 # Define onde serão alocados os arquivos upados
@@ -130,7 +130,9 @@ mkpath(FILE_PATH)
     
     # Apresenta ou oculta os dropbox "Processo de Amostragem" e "Formato da Parcela" quando selecionado
     @onchange selected_method begin
-        if selected_method === "Área Fixa" || selected_method === ""
+        if selected_method === ""
+            selected_process_visibility = false
+        elseif selected_method === "Área Fixa" || selected_method === ""
             selected_process_visibility = true
             fab_visibility = false
             selected_dataset_visibility = false
@@ -430,6 +432,7 @@ mkpath(FILE_PATH)
         end
         visibility_result = true
         visibility_start_data = false
+            notify(__model__, "Erro ao processar inventário, verifique os dados informados!")
     end
 
     @onbutton Button_return begin

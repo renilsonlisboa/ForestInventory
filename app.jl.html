@@ -250,10 +250,9 @@
                     </q-table>
                 </div>
 
-                <div class="uploader-container" v-if="false">
-                    <q-uploader v-on:start="function(event) { handle_event(event, 'started') }"
-                        hide-upload-btn="" auto-upload=""
-                        v-on:failed="function(event) { handle_event(event, 'failed') }"
+                <div style="flex: 1" class="uploader-container" v-if="false">
+                    <q-uploader v-on:start="function(event) { handle_event(event, 'started') }" hide-upload-btn=""
+                        auto-upload="" v-on:failed="function(event) { handle_event(event, 'failed') }"
                         v-on:uploaded="function(event) { handle_event(event, 'uploaded') }" no-thumbnails=""
                         v-on:removed="function(event) { handle_event(event, 'removed') }"
                         v-on:finish="function(event) { handle_event(event, 'finished') }"
@@ -266,14 +265,18 @@
                 </div>
             </div>
 
-            <q-table flat="" bordered="" :columns="Result_Table.columns" v-model="Table_data" title="Resultados"
-                :data="Result_Table.data" row-key="__id" v-if="true">
-            </q-table>
+            <div style="flex: 1">
+                <q-table flat="" bordered="" :columns="Result_Table.columns" v-model="Table_data" title="Resultados"
+                    :data="Result_Table.data" row-key="__id" v-if="true">
+                </q-table>
+            </div>
 
-            <q-table flat="" bordered="" :columns="Result_Table_Arvores_Duvidosas.columns" v-model="Table_data"
-                title="Classificação Árvores Duvidosas" :data="Result_Table_Arvores_Duvidosas.data" row-key="__id"
-                v-if="false">
-            </q-table>
+            <div style="flex: 1">
+                <q-table flat="" bordered="" :columns="Result_Table_Arvores_Duvidosas.columns" v-model="Table_data"
+                    title="Classificação Árvores Duvidosas" :data="Result_Table_Arvores_Duvidosas.data" row-key="__id"
+                    v-if="false">
+                </q-table>
+            </div>
         </div>
     </div>
     <div id="buttons" style="padding: 10px;">
