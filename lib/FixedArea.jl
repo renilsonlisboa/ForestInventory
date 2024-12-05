@@ -87,9 +87,6 @@ export AAS, AD, ARP, ART, CONGL, DE, ESTRAT, IND, MULTI, SIST
         "Fator de correção", "População", "Número total de unidades amostrais da população", 
         "Nível de significância (α)", "População", "Observação"], Valores= vcat(round.([Media, LII, LIS, ValTotal, LIItotal, LIStotal, ErroPadRel, Area, ErroAmostAbs, ErroPad, DesvPad, Variancia, VarMed, VarMedRel, CV, LE, EAR, FatorCorr, Tamanho_da_amostra, N, α], digits = 2), [População, Observação]))
      
-        XLSX.writetable(("AAS.xlsx"), Resultados=(collect(DataFrames.eachcol(Resultados)),
-        DataFrames.names(Resultados))) #Exportar para o Excel
-
         return Resultados
     end
 

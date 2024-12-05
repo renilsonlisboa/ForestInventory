@@ -1,0 +1,740 @@
+┌ Info: 2024-12-04 20:42:30 Watching ["C:\\Users\\renil\\.julia\\dev\\TCCFunctions"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-12-04 20:42:31 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 20:43:17 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-12-04 20:43:18 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\y3eEt\src\Servers.jl:382
+┌ Info: 2024-12-04 20:48:47 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 20:50:28 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Error: 2024-12-04 20:51:25 Failed to revise C:\Users\renil\.julia\dev\TCCFunctions\app.jl
+│   exception = Revise.ReviseEvalException("C:\\Users\\renil\\.julia\\dev\\TCCFunctions\\app.jl:58", SystemError("opening file \"example.xlsx\"", 13, nothing), Any[(systemerror(p::String, errno::Int32; extrainfo::Nothing) at error.jl:176, 1), (kwcall(::@NamedTuple{extrainfo::Nothing}, ::typeof(systemerror), p::String, errno::Int32) at error.jl:176, 1), (kwcall(::@NamedTuple{extrainfo::Nothing}, ::typeof(systemerror), p::String) at error.jl:176, 1), (systemerror(p::String, b::Bool; extrainfo::Nothing) at error.jl:175, 1), (systemerror(p::String, b::Bool) at error.jl:175, 1), (open(fname::String; lock::Bool, read::Nothing, write::Bool, create::Nothing, truncate::Nothing, append::Nothing) at iostream.jl:295, 1), (kwcall(::@NamedTuple{write::Bool}, ::typeof(open), fname::String) at iostream.jl:277, 1), (ZipArchives.ZipWriter(f::XLSX.var"#44#45"{XLSX.XLSXFile}, filename::String; open_kwargs::Base.Pairs{Symbol, Union{}, Tuple{}, @NamedTuple{}}) at writer.jl:65, 1), (ZipArchives.ZipWriter(f::XLSX.var"#44#45"{XLSX.XLSXFile}, filename::String) at writer.jl:64, 1), (writexlsx(output_source::String, xf::XLSX.XLSXFile; overwrite::Bool) at write.jl:63, 1), (kwcall(::@NamedTuple{overwrite::Bool}, ::typeof(XLSX.writexlsx), output_source::String, xf::XLSX.XLSXFile) at write.jl:52, 1), (openxlsx(f::var"#587#594", source::String; mode::String, enable_cache::Bool) at read.jl:145, 1), (kwcall(::@NamedTuple{mode::String}, ::typeof(XLSX.openxlsx), f::var"#587#594", source::String) at read.jl:128, 1), (create_excel_file(filepath::String) at app.jl:52, 1), (top-level scope at app.jl:58, 1)])
+└ @ Revise C:\Users\renil\.julia\packages\Revise\8jqWV\src\packagedef.jl:733
+┌ Warning: 2024-12-04 20:51:26 The running code does not match the saved version for the following files:
+│ 
+│   C:\Users\renil\.julia\dev\TCCFunctions\app.jl
+│ 
+│ If the error was due to evaluation order, it can sometimes be resolved by calling `Revise.retry()`.
+│ Use Revise.errors() to report errors again. Only the first error in each file is shown.
+│ Your prompt color may be yellow until the errors are resolved.
+└ @ Revise C:\Users\renil\.julia\packages\Revise\8jqWV\src\packagedef.jl:846
+┌ Error: 2024-12-04 20:52:12 Failed to revise C:\Users\renil\.julia\dev\TCCFunctions\app.jl
+│   exception = Revise.ReviseEvalException("C:\\Users\\renil\\.julia\\dev\\TCCFunctions\\app.jl:58", UndefVarError(:setdata, XLSX), Any[(openxlsx(f::var"#608#615", source::String; mode::String, enable_cache::Bool) at read.jl:151, 1), (kwcall(::@NamedTuple{mode::String}, ::typeof(XLSX.openxlsx), f::var"#608#615", source::String) at read.jl:128, 1), (create_excel_file(filepath::String) at app.jl:52, 1), (top-level scope at app.jl:58, 1)])
+└ @ Revise C:\Users\renil\.julia\packages\Revise\8jqWV\src\packagedef.jl:733
+┌ Info: 2024-12-04 20:57:25 Watching ["C:\\Users\\renil\\.julia\\dev\\TCCFunctions"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-12-04 20:57:27 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:03:59 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-12-04 21:04:01 Watching ["C:\\Users\\renil\\.julia\\dev\\TCCFunctions"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-12-04 21:04:01 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:382
+┌ Info: 2024-12-04 21:04:03 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:04:10 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-12-04 21:04:46 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:04:50 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-12-04 21:05:15 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:06:21 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:06:29 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-12-04 21:11:00 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:11:13 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:11:26 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:11:49 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-12-04 21:12:06 Route matches static file: /data.zip -- executing route
+└ @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:157
+┌ Error: 2024-12-04 21:12:07 UndefVarError: `sendfile` not defined in `Main`
+│ Suggestion: check for spelling errors or missing imports.
+│ Stacktrace:
+│   [1] (::var"#39#40")()
+│     @ Main C:\Users\renil\.julia\dev\TCCFunctions\app.jl:516
+│   [2] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:547
+│   [3] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:172
+│   [4] route_request
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:147 [inlined]
+│   [5] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:300
+│   [6] handle_request
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:292 [inlined]
+│   [7] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\macros.jl:123
+│   [8] #invokelatest#2
+│     @ .\essentials.jl:1055 [inlined]
+│   [9] invokelatest
+│     @ .\essentials.jl:1052 [inlined]
+│  [10] #153
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:425 [inlined]
+│  [11] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, @Kwargs{}}, print_error::Bool)
+│     @ Distributed C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\process_messages.jl:70
+│  [12] #remotecall_fetch#158
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:450 [inlined]
+│  [13] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:449 [inlined]
+│  [14] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:492 [inlined]
+│  [15] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:344
+│  [16] setup_http_listener (repeats 2 times)
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:342 [inlined]
+│  [17] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:313
+│  [18] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:333
+│  [19] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:124
+│  [20] #invokelatest#2
+│     @ .\essentials.jl:1055 [inlined]
+│  [21] invokelatest
+│     @ .\essentials.jl:1052 [inlined]
+│  [22] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing, verbose::Bool)
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:469
+│  [23] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Bool, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:401
+│ 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:356
+┌ Warning: 2024-12-04 21:12:35 Route matches static file: /data.zip -- executing route
+└ @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:157
+┌ Error: 2024-12-04 21:12:35 UndefVarError: `sendfile` not defined in `Main`
+│ Suggestion: check for spelling errors or missing imports.
+│ Stacktrace:
+│   [1] (::var"#39#40")()
+│     @ Main C:\Users\renil\.julia\dev\TCCFunctions\app.jl:516
+│   [2] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:547
+│   [3] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:172
+│   [4] route_request
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:147 [inlined]
+│   [5] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:300
+│   [6] handle_request
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:292 [inlined]
+│   [7] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\macros.jl:123
+│   [8] #invokelatest#2
+│     @ .\essentials.jl:1055 [inlined]
+│   [9] invokelatest
+│     @ .\essentials.jl:1052 [inlined]
+│  [10] #153
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:425 [inlined]
+│  [11] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, @Kwargs{}}, print_error::Bool)
+│     @ Distributed C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\process_messages.jl:70
+│  [12] #remotecall_fetch#158
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:450 [inlined]
+│  [13] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:449 [inlined]
+│  [14] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:492 [inlined]
+│  [15] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:344
+│  [16] setup_http_listener (repeats 2 times)
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:342 [inlined]
+│  [17] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:313
+│  [18] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:333
+│  [19] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:124
+│  [20] #invokelatest#2
+│     @ .\essentials.jl:1055 [inlined]
+│  [21] invokelatest
+│     @ .\essentials.jl:1052 [inlined]
+│  [22] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing, verbose::Bool)
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:469
+│  [23] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Bool, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:401
+│ 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:356
+┌ Info: 2024-12-04 21:17:25 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-12-04 21:17:35 Route matches static file: /data.zip -- executing route
+└ @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:157
+┌ Error: 2024-12-04 21:17:36 UndefVarError: `sendfile` not defined in `Main`
+│ Suggestion: check for spelling errors or missing imports.
+│ Stacktrace:
+│   [1] (::var"#39#40")()
+│     @ Main C:\Users\renil\.julia\dev\TCCFunctions\app.jl:516
+│   [2] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:547
+│   [3] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:172
+│   [4] route_request
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:147 [inlined]
+│   [5] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:300
+│   [6] handle_request
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:292 [inlined]
+│   [7] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\macros.jl:123
+│   [8] #invokelatest#2
+│     @ .\essentials.jl:1055 [inlined]
+│   [9] invokelatest
+│     @ .\essentials.jl:1052 [inlined]
+│  [10] #153
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:425 [inlined]
+│  [11] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, @Kwargs{}}, print_error::Bool)
+│     @ Distributed C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\process_messages.jl:70
+│  [12] #remotecall_fetch#158
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:450 [inlined]
+│  [13] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:449 [inlined]
+│  [14] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:492 [inlined]
+│  [15] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:344
+│  [16] setup_http_listener (repeats 2 times)
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:342 [inlined]
+│  [17] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:313
+│  [18] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:333
+│  [19] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:124
+│  [20] #invokelatest#2
+│     @ .\essentials.jl:1055 [inlined]
+│  [21] invokelatest
+│     @ .\essentials.jl:1052 [inlined]
+│  [22] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing, verbose::Bool)
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:469
+│  [23] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Bool, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:401
+│ 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:356
+┌ Warning: 2024-12-04 21:17:43 Route matches static file: /data.zip -- executing route
+└ @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:157
+┌ Error: 2024-12-04 21:17:43 UndefVarError: `sendfile` not defined in `Main`
+│ Suggestion: check for spelling errors or missing imports.
+│ Stacktrace:
+│   [1] (::var"#39#40")()
+│     @ Main C:\Users\renil\.julia\dev\TCCFunctions\app.jl:516
+│   [2] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:547
+│   [3] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:172
+│   [4] route_request
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:147 [inlined]
+│   [5] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:300
+│   [6] handle_request
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:292 [inlined]
+│   [7] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\macros.jl:123
+│   [8] #invokelatest#2
+│     @ .\essentials.jl:1055 [inlined]
+│   [9] invokelatest
+│     @ .\essentials.jl:1052 [inlined]
+│  [10] #153
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:425 [inlined]
+│  [11] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, @Kwargs{}}, print_error::Bool)
+│     @ Distributed C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\process_messages.jl:70
+│  [12] #remotecall_fetch#158
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:450 [inlined]
+│  [13] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:449 [inlined]
+│  [14] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:492 [inlined]
+│  [15] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:344
+│  [16] setup_http_listener (repeats 2 times)
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:342 [inlined]
+│  [17] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:313
+│  [18] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:333
+│  [19] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:124
+│  [20] #invokelatest#2
+│     @ .\essentials.jl:1055 [inlined]
+│  [21] invokelatest
+│     @ .\essentials.jl:1052 [inlined]
+│  [22] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing, verbose::Bool)
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:469
+│  [23] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Bool, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:401
+│ 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:356
+┌ Info: 2024-12-04 21:18:32 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-12-04 21:18:43 Route matches static file: /data.zip -- executing route
+└ @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:157
+┌ Error: 2024-12-04 21:18:43 UndefVarError: `sendfile` not defined in `Main`
+│ Suggestion: check for spelling errors or missing imports.
+│ Stacktrace:
+│   [1] (::var"#39#40")()
+│     @ Main C:\Users\renil\.julia\dev\TCCFunctions\app.jl:516
+│   [2] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:547
+│   [3] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:172
+│   [4] route_request
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:147 [inlined]
+│   [5] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:300
+│   [6] handle_request
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:292 [inlined]
+│   [7] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\macros.jl:123
+│   [8] #invokelatest#2
+│     @ .\essentials.jl:1055 [inlined]
+│   [9] invokelatest
+│     @ .\essentials.jl:1052 [inlined]
+│  [10] #153
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:425 [inlined]
+│  [11] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, @Kwargs{}}, print_error::Bool)
+│     @ Distributed C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\process_messages.jl:70
+│  [12] #remotecall_fetch#158
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:450 [inlined]
+│  [13] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:449 [inlined]
+│  [14] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:492 [inlined]
+│  [15] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:344
+│  [16] setup_http_listener (repeats 2 times)
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:342 [inlined]
+│  [17] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:313
+│  [18] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:333
+│  [19] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:124
+│  [20] #invokelatest#2
+│     @ .\essentials.jl:1055 [inlined]
+│  [21] invokelatest
+│     @ .\essentials.jl:1052 [inlined]
+│  [22] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing, verbose::Bool)
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:469
+│  [23] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Bool, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:401
+│ 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:356
+┌ Warning: 2024-12-04 21:18:49 Route matches static file: /data.zip -- executing route
+└ @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:157
+┌ Error: 2024-12-04 21:18:49 UndefVarError: `sendfile` not defined in `Main`
+│ Suggestion: check for spelling errors or missing imports.
+│ Stacktrace:
+│   [1] (::var"#39#40")()
+│     @ Main C:\Users\renil\.julia\dev\TCCFunctions\app.jl:516
+│   [2] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:547
+│   [3] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:172
+│   [4] route_request
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:147 [inlined]
+│   [5] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:300
+│   [6] handle_request
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:292 [inlined]
+│   [7] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\macros.jl:123
+│   [8] #invokelatest#2
+│     @ .\essentials.jl:1055 [inlined]
+│   [9] invokelatest
+│     @ .\essentials.jl:1052 [inlined]
+│  [10] #153
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:425 [inlined]
+│  [11] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, @Kwargs{}}, print_error::Bool)
+│     @ Distributed C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\process_messages.jl:70
+│  [12] #remotecall_fetch#158
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:450 [inlined]
+│  [13] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:449 [inlined]
+│  [14] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:492 [inlined]
+│  [15] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:344
+│  [16] setup_http_listener (repeats 2 times)
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:342 [inlined]
+│  [17] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:313
+│  [18] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:333
+│  [19] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:124
+│  [20] #invokelatest#2
+│     @ .\essentials.jl:1055 [inlined]
+│  [21] invokelatest
+│     @ .\essentials.jl:1052 [inlined]
+│  [22] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing, verbose::Bool)
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:469
+│  [23] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Bool, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:401
+│ 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:356
+┌ Info: 2024-12-04 21:19:00 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:20:20 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:23:12 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:28:59 Watching ["C:\\Users\\renil\\.julia\\dev\\TCCFunctions"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-12-04 21:29:00 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:29:30 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-12-04 21:29:30 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:382
+┌ Info: 2024-12-04 21:31:33 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:31:58 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:32:08 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:32:23 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:32:32 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:33:14 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:34:11 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:35:03 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:35:43 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:35:53 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:41:10 Watching ["C:\\Users\\renil\\.julia\\dev\\TCCFunctions"]
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:19
+┌ Info: 2024-12-04 21:41:12 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:41:17 
+│ Web Server starting at http://127.0.0.1:8000 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
+┌ Info: 2024-12-04 21:41:17 Listening on: 127.0.0.1:8000, thread id: 1
+└ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:382
+┌ Info: 2024-12-04 21:44:03 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:44:13 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:44:22 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:45:28 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:46:01 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:46:07 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-04 21:48:04 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-05 05:09:52 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Error: 2024-12-05 05:09:53 LoadError: ParseError:
+│ # Error @ C:\Users\renil\AppData\Local\Temp\jl_genie_build_FiAI3J\GenieViews\2e6e7fcc87754491a0903780c83db4e5de55751f.jl:249:41
+│ 
+│ q__btn(label="Importar dados" , function="" , handle_event="" , class="q-btn--night-theme" , htmlsourceindent="3" , ; NamedTuple{(Symbol("v-if"), Symbol("v-on:click"))}(("true", ""))... )
+│ #                                       ╙ ── unexpected `=`
+│ Stacktrace:
+│   [1] top-level scope
+│     @ C:\Users\renil\AppData\Local\Temp\jl_genie_build_FiAI3J\GenieViews\2e6e7fcc87754491a0903780c83db4e5de55751f.jl:249
+│   [2] include
+│     @ .\Base.jl:557 [inlined]
+│   [3] get_template(path::String; partial::Bool, context::Module, vars::@Kwargs{model::var"##Main_ReactiveModel!#1600"})
+│     @ Genie.Renderer.Html C:\Users\renil\.julia\packages\Genie\A612O\src\renderers\Html.jl:376
+│   [4] get_template
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\renderers\Html.jl:359 [inlined]
+│   [5] #render#22
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\renderers\Html.jl:454 [inlined]
+│   [6] render
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\renderers\Html.jl:450 [inlined]
+│   [7] render(::Type{MIME{Symbol("text/html")}}, viewfile::FilePathsBase.WindowsPath; layout::String, context::Module, vars::@Kwargs{model::var"##Main_ReactiveModel!#1600"})
+│     @ Genie.Renderer.Html C:\Users\renil\.julia\packages\Genie\A612O\src\renderers\Html.jl:502
+│   [8] render
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\renderers\Html.jl:498 [inlined]
+│   [9] #html#37
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\renderers\Html.jl:658 [inlined]
+│  [10] (::Stipple.Pages.var"#7#10"{FilePathsBase.WindowsPath, String, @Kwargs{}})()
+│     @ Stipple.Pages C:\Users\renil\.julia\packages\Stipple\z5YII\src\Pages.jl:68
+│  [11] run_route(r::Genie.Router.Route)
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:547
+│  [12] route_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Router C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:172
+│  [13] route_request
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Router.jl:147 [inlined]
+│  [14] handle_request(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:300
+│  [15] handle_request
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:292 [inlined]
+│  [16] (::Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response})()
+│     @ Genie.Server C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\macros.jl:123
+│  [17] #invokelatest#2
+│     @ .\essentials.jl:1055 [inlined]
+│  [18] invokelatest
+│     @ .\essentials.jl:1052 [inlined]
+│  [19] #153
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:425 [inlined]
+│  [20] run_work_thunk(thunk::Distributed.var"#153#154"{Genie.Server.var"#27#28"{HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}}, HTTP.Messages.Request, HTTP.Messages.Response}, Tuple{}, @Kwargs{}}, print_error::Bool)
+│     @ Distributed C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\process_messages.jl:70
+│  [21] #remotecall_fetch#158
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:450 [inlined]
+│  [22] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:449 [inlined]
+│  [23] remotecall_fetch
+│     @ C:\Users\renil\AppData\Local\Programs\Julia-1.11.1\share\julia\stdlib\v1.11\Distributed\src\remotecall.jl:492 [inlined]
+│  [24] setup_http_listener(req::HTTP.Messages.Request, res::HTTP.Messages.Response; stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:344
+│  [25] setup_http_listener (repeats 2 times)
+│     @ C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:342 [inlined]
+│  [26] (::Genie.Server.var"#24#25"{typeof(Genie.Server.setup_http_listener)})(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:313
+│  [27] setup_http_streamer(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:333
+│  [28] (::Genie.Server.var"#6#12")(stream::HTTP.Streams.Stream{HTTP.Messages.Request, HTTP.Connections.Connection{Sockets.TCPSocket}})
+│     @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:124
+│  [29] #invokelatest#2
+│     @ .\essentials.jl:1055 [inlined]
+│  [30] invokelatest
+│     @ .\essentials.jl:1052 [inlined]
+│  [31] handle_connection(f::Function, c::HTTP.Connections.Connection{Sockets.TCPSocket}, listener::HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, readtimeout::Int64, access_log::Nothing, verbose::Bool)
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:469
+│  [32] (::HTTP.Servers.var"#16#17"{Genie.Server.var"#6#12", HTTP.Servers.Listener{Nothing, Sockets.TCPServer}, Set{HTTP.Connections.Connection}, Int64, Nothing, ReentrantLock, Bool, Base.Semaphore, HTTP.Connections.Connection{Sockets.TCPSocket}})()
+│     @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:401
+│ in expression starting at C:\Users\renil\AppData\Local\Temp\jl_genie_build_FiAI3J\GenieViews\2e6e7fcc87754491a0903780c83db4e5de55751f.jl:249
+│ 
+└ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:356
+┌ Info: 2024-12-05 05:09:59 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-05 05:11:16 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-05 05:12:29 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-05 05:16:39 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-05 20:36:46 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-05 20:36:50 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-05 20:38:39 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-05 20:39:38 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Error: 2024-12-05 20:39:40 
+│ Error attempting to invoke handler.
+│ 
+│   Handler:
+│   # 0 methods for anonymous function "#1339"
+│   Core.CodeInfo[]
+│ 
+│   Type of argument:
+│   String
+│ 
+│   Value:
+│   Área Fixa
+│ 
+│   Exception:
+│   MethodError(var"#1339#1346"{var"##Main_ReactiveModel!#3233"}(Instance of 'Main_ReactiveModel'
+│     channel__ (internal): NWHWWLMTJBRSWLWTOKWNUVCSNRDWNZVZ
+│     modes__ (internal): LittleDict{Symbol, Int64, Vector{Symbol}, Vector{Int64}}()
+│     isready (autofield, in): true
+│     isprocessing (autofield, in): false
+│     fileuploads (autofield, in): Dict{AbstractString, AbstractString}()
+│ 
+│     method_swampling (out): ["", "Área Fixa", "Bitterlich", "Prodan", "Strand", "3P"]
+│     selected_method (in): Área Fixa
+│     process_swampling (out): ["Amostragem Aleatória Simples", "Amostragem Estratificada", "Amostragem Sistemática", "Amostragem em Dois Estágios", "Amostragem em Conglomerados", "Amostragem Sistemática com Múltiplos Inícios Aleatórios", "Amostragem Independente", "Amostragem com Repetição Total", "Amostragem com Repetição Dupla", "Amostragem com Repetição Parcial"]
+│     selected_process (in): 
+│     variables (out): ["I", "II", "III", "IV", "V", "VI"]
+│     selected_variable (in): 
+│     upload_datasets (out): ["Prodan.csv", "Strand.csv", "Strand2.csv", "Strand3.csv", "aas.csv", "bitterlich.csv", "bitterlich_magda.csv", "data.zip"]
+│     selected_dataset (in): 
+│     plot_area (in): 
+│     inventoried_area (in): 
+│     ear (in): 
+│     alpha (in): 
+│     selected_unit_ad (in): 
+│     selected_sub_unit (in): 
+│     selected_ocasiao_1 (in): 
+│     selected_ocasiao_2 (in): 
+│     inventoried_area_occasion_1 (in): 
+│     inventoried_area_occasion_2 (in): 
+│     n_potencial (in): 
+│     Button_process (in): false
+│     selected_estrato (in): 
+│     selected_subestrato (in): 
+│     selected_dap_column (in): 
+│     selected_vol_column (in): 
+│     selected_num_arvores_column (in): 
+│     fab (in): 
+│     selected_distance_column (in): 
+│     Distância (in): 
+│     unit (out): ["m³", "Kg", "t", "arv"]
+│     selected_unit (in): 
+│     upfiles (out): ["Prodan.csv", "Strand.csv", "Strand2.csv", "Strand3.csv", "aas.csv", "bitterlich.csv", "bitterlich_magda.csv", "data.zip"]
+│     showUploader (in): false
+│     visibility_visual (in): false
+│     selected_unit_visibility (in): false
+│     selected_variable_visibility (in): false
+│     selected_process_visibility (in): false
+│     selected_dataset_visibility (in): false
+│     selected_unit_dropbox_visibility (in): false
+│     selected_subunit_dropbox_visibility (in): false
+│     selected_occasion_visibility (in): false
+│     plot_area_visibility (in): false
+│     inventoried_area_visibility (in): false
+│     inventoried_area_occasion_1_visibility (in): false
+│     inventoried_area_occasion_2_visibility (in): false
+│     ear_visibility (in): false
+│     alpha_visibility (in): false
+│     fab_visibility (in): false
+│     n_potencial_visibility (in): false
+│     selected_estrato_visibility (in): false
+│     selected_subestrato_visibility (in): false
+│     selected_dap_column_visibility (in): false
+│     selected_distance_column_visibility (in): false
+│     selected_vol_column_visibility (in): false
+│     selected_num_arvores_column_visibility (in): false
+│     Distância_visibility (in): false
+│     showUploadModal (in): true
+│     Table_data (out): DataTable{DataFrame}(0×0 DataFrame, DataTableOptions(false, "ID", nothing, Dict{Union{Regex, String}, Dict{Symbol, Any}}()), DataTablePagination(:desc, false, 1, 50, nothing, ""), "")
+│     Result_Table (out): DataTable{DataFrame}(0×0 DataFrame, DataTableOptions(false, "ID", nothing, Dict{Union{Regex, String}, Dict{Symbol, Any}}()), DataTablePagination(:desc, false, 1, 50, nothing, ""), "")
+│     Result_Table_Arvores_Duvidosas (out): DataTable{DataFrame}(0×0 DataFrame, DataTableOptions(false, "ID", nothing, Dict{Union{Regex, String}, Dict{Symbol, Any}}()), DataTablePagination(:desc, false, 1, 50, nothing, ""), "")
+│     Resulta_Table_Filter_Data (out): DataTable{DataFrame}(0×0 DataFrame, DataTableOptions(false, "ID", nothing, Dict{Union{Regex, String}, Dict{Symbol, Any}}()), DataTablePagination(:desc, false, 1, 50, nothing, ""), "")
+│     Button_return (in): false
+│     visibility_result (in): false
+│     visibility_start_data (in): false
+│     plotdata (out): [{"mode":"markers","y":[10,15,13,17],"type":"scatter","name":"Trace 1","x":[1,2,3,4]},{"mode":"lines+markers","line":{"color":"red"},"y":[5,9,11,12],"type":"scatter","name":"Trace 2","x":[1,2,3,4]}]
+│     plotlayout (out): {"xaxis":{"showgrid":false,"title":"X Axis Label"},"template":{"data":{"scattergl":[{"type":"scattergl","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"carpet":[{"aaxis":{"gridcolor":"white","endlinecolor":"#2a3f5f","minorgridcolor":"white","startlinecolor":"#2a3f5f","linecolor":"white"},"type":"carpet","baxis":{"gridcolor":"white","endlinecolor":"#2a3f5f","minorgridcolor":"white","startlinecolor":"#2a3f5f","linecolor":"white"}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"parcoords":[{"line":{"colorbar":{"ticks":"","outlinewidth":0}},"type":"parcoords"}],"scatter":[{"type":"scatter","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"histogram2dcontour":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"histogram2dcontour","colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contour":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"contour","colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"mesh3d":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"mesh3d"}],"surface":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"surface","colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"histogram":[{"type":"histogram","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"pie":[{"type":"pie","automargin":true}],"choropleth":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"choropleth"}],"heatmapgl":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"heatmapgl","colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"bar":[{"type":"bar","error_y":{"color":"#2a3f5f"},"error_x":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5}}}],"heatmap":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"heatmap","colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"contourcarpet"}],"table":[{"type":"table","header":{"line":{"color":"white"},"fill":{"color":"#C8D4E3"}},"cells":{"line":{"color":"white"},"fill":{"color":"#EBF0F8"}}}],"scatter3d":[{"line":{"colorbar":{"ticks":"","outlinewidth":0}},"type":"scatter3d","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"histogram2d":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"histogram2d","colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"barpolar":[{"type":"barpolar","marker":{"line":{"color":"#E5ECF6","width":0.5}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}]},"layout":{"coloraxis":{"colorbar":{"ticks":"","outlinewidth":0}},"xaxis":{"gridcolor":"white","zerolinewidth":2,"title":{"standoff":15},"ticks":"","zerolinecolor":"white","automargin":true,"linecolor":"white"},"hovermode":"closest","paper_bgcolor":"white","geo":{"showlakes":true,"showland":true,"landcolor":"#E5ECF6","bgcolor":"white","subunitcolor":"white","lakecolor":"white"},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"yaxis":{"gridcolor":"white","zerolinewidth":2,"title":{"standoff":15},"ticks":"","zerolinecolor":"white","automargin":true,"linecolor":"white"},"shapedefaults":{"line":{"color":"#2a3f5f"}},"hoverlabel":{"align":"left"},"mapbox":{"style":"light"},"polar":{"angularaxis":{"gridcolor":"white","ticks":"","linecolor":"white"},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","ticks":"","linecolor":"white"}},"autotypenumbers":"strict","font":{"color":"#2a3f5f"},"ternary":{"baxis":{"gridcolor":"white","ticks":"","linecolor":"white"},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","ticks":"","linecolor":"white"},"aaxis":{"gridcolor":"white","ticks":"","linecolor":"white"}},"annotationdefaults":{"arrowhead":0,"arrowwidth":1,"arrowcolor":"#2a3f5f"},"plot_bgcolor":"#E5ECF6","title":{"x":0.05},"scene":{"xaxis":{"gridcolor":"white","gridwidth":2,"backgroundcolor":"#E5ECF6","ticks":"","showbackground":true,"zerolinecolor":"white","linecolor":"white"},"zaxis":{"gridcolor":"white","gridwidth":2,"backgroundcolor":"#E5ECF6","ticks":"","showbackground":true,"zerolinecolor":"white","linecolor":"white"},"yaxis":{"gridcolor":"white","gridwidth":2,"backgroundcolor":"#E5ECF6","ticks":"","showbackground":true,"zerolinecolor":"white","linecolor":"white"}},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"]}},"margin":{"l":50,"b":50,"r":50,"t":60},"title":"A Scatter Plot with Multiple Traces","yaxis":{"showgrid":true,"title":"Y Axis Label","range":[0,20]}}
+│     linkhref (out): /data.txt
+│     dfile (in): false
+│     table (out): DataTable{DataFrame}(5×2 DataFrame
+│  Row │ a      b
+│      │ Int64  Int64
+│ ─────┼──────────────
+│    1 │     3      4
+│    2 │     5      3
+│    3 │     9      3
+│    4 │     1      4
+│    5 │     5      7, DataTableOptions(false, "ID", nothing, Dict{Union{Regex, String}, Dict{Symbol, Any}}()), DataTablePagination(:desc, false, 1, 50, nothing, ""), "")
+│     text (in): The quick brown fox jumped over the ...
+│ ), ("Área Fixa",), 0x0000000000007b00)
+│ 
+│   exception = (MethodError(var"#1339#1346"{var"##Main_ReactiveModel!#3233"}(Instance of 'Main_ReactiveModel'
+    channel__ (internal): NWHWWLMTJBRSWLWTOKWNUVCSNRDWNZVZ
+    modes__ (internal): LittleDict{Symbol, Int64, Vector{Symbol}, Vector{Int64}}()
+    isready (autofield, in): true
+    isprocessing (autofield, in): false
+    fileuploads (autofield, in): Dict{AbstractString, AbstractString}()
+
+    method_swampling (out): ["", "Área Fixa", "Bitterlich", "Prodan", "Strand", "3P"]
+    selected_method (in): Área Fixa
+    process_swampling (out): ["Amostragem Aleatória Simples", "Amostragem Estratificada", "Amostragem Sistemática", "Amostragem em Dois Estágios", "Amostragem em Conglomerados", "Amostragem Sistemática com Múltiplos Inícios Aleatórios", "Amostragem Independente", "Amostragem com Repetição Total", "Amostragem com Repetição Dupla", "Amostragem com Repetição Parcial"]
+    selected_process (in): 
+    variables (out): ["I", "II", "III", "IV", "V", "VI"]
+    selected_variable (in): 
+    upload_datasets (out): ["Prodan.csv", "Strand.csv", "Strand2.csv", "Strand3.csv", "aas.csv", "bitterlich.csv", "bitterlich_magda.csv", "data.zip"]
+    selected_dataset (in): 
+    plot_area (in): 
+    inventoried_area (in): 
+    ear (in): 
+    alpha (in): 
+    selected_unit_ad (in): 
+    selected_sub_unit (in): 
+    selected_ocasiao_1 (in): 
+    selected_ocasiao_2 (in): 
+    inventoried_area_occasion_1 (in): 
+    inventoried_area_occasion_2 (in): 
+    n_potencial (in): 
+    Button_process (in): false
+    selected_estrato (in): 
+    selected_subestrato (in): 
+    selected_dap_column (in): 
+    selected_vol_column (in): 
+    selected_num_arvores_column (in): 
+    fab (in): 
+    selected_distance_column (in): 
+    Distância (in): 
+    unit (out): ["m³", "Kg", "t", "arv"]
+    selected_unit (in): 
+    upfiles (out): ["Prodan.csv", "Strand.csv", "Strand2.csv", "Strand3.csv", "aas.csv", "bitterlich.csv", "bitterlich_magda.csv", "data.zip"]
+    showUploader (in): false
+    visibility_visual (in): false
+    selected_unit_visibility (in): false
+    selected_variable_visibility (in): false
+    selected_process_visibility (in): false
+    selected_dataset_visibility (in): false
+    selected_unit_dropbox_visibility (in): false
+    selected_subunit_dropbox_visibility (in): false
+    selected_occasion_visibility (in): false
+    plot_area_visibility (in): false
+    inventoried_area_visibility (in): false
+    inventoried_area_occasion_1_visibility (in): false
+    inventoried_area_occasion_2_visibility (in): false
+    ear_visibility (in): false
+    alpha_visibility (in): false
+    fab_visibility (in): false
+    n_potencial_visibility (in): false
+    selected_estrato_visibility (in): false
+    selected_subestrato_visibility (in): false
+    selected_dap_column_visibility (in): false
+    selected_distance_column_visibility (in): false
+    selected_vol_column_visibility (in): false
+    selected_num_arvores_column_visibility (in): false
+    Distância_visibility (in): false
+    showUploadModal (in): true
+    Table_data (out): DataTable{DataFrame}(0×0 DataFrame, DataTableOptions(false, "ID", nothing, Dict{Union{Regex, String}, Dict{Symbol, Any}}()), DataTablePagination(:desc, false, 1, 50, nothing, ""), "")
+    Result_Table (out): DataTable{DataFrame}(0×0 DataFrame, DataTableOptions(false, "ID", nothing, Dict{Union{Regex, String}, Dict{Symbol, Any}}()), DataTablePagination(:desc, false, 1, 50, nothing, ""), "")
+    Result_Table_Arvores_Duvidosas (out): DataTable{DataFrame}(0×0 DataFrame, DataTableOptions(false, "ID", nothing, Dict{Union{Regex, String}, Dict{Symbol, Any}}()), DataTablePagination(:desc, false, 1, 50, nothing, ""), "")
+    Resulta_Table_Filter_Data (out): DataTable{DataFrame}(0×0 DataFrame, DataTableOptions(false, "ID", nothing, Dict{Union{Regex, String}, Dict{Symbol, Any}}()), DataTablePagination(:desc, false, 1, 50, nothing, ""), "")
+    Button_return (in): false
+    visibility_result (in): false
+    visibility_start_data (in): false
+    plotdata (out): [{"mode":"markers","y":[10,15,13,17],"type":"scatter","name":"Trace 1","x":[1,2,3,4]},{"mode":"lines+markers","line":{"color":"red"},"y":[5,9,11,12],"type":"scatter","name":"Trace 2","x":[1,2,3,4]}]
+    plotlayout (out): {"xaxis":{"showgrid":false,"title":"X Axis Label"},"template":{"data":{"scattergl":[{"type":"scattergl","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"carpet":[{"aaxis":{"gridcolor":"white","endlinecolor":"#2a3f5f","minorgridcolor":"white","startlinecolor":"#2a3f5f","linecolor":"white"},"type":"carpet","baxis":{"gridcolor":"white","endlinecolor":"#2a3f5f","minorgridcolor":"white","startlinecolor":"#2a3f5f","linecolor":"white"}}],"scatterpolar":[{"type":"scatterpolar","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"parcoords":[{"line":{"colorbar":{"ticks":"","outlinewidth":0}},"type":"parcoords"}],"scatter":[{"type":"scatter","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"histogram2dcontour":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"histogram2dcontour","colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contour":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"contour","colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"scattercarpet":[{"type":"scattercarpet","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"mesh3d":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"mesh3d"}],"surface":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"surface","colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"scattermapbox":[{"type":"scattermapbox","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"scattergeo":[{"type":"scattergeo","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"histogram":[{"type":"histogram","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"pie":[{"type":"pie","automargin":true}],"choropleth":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"choropleth"}],"heatmapgl":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"heatmapgl","colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"bar":[{"type":"bar","error_y":{"color":"#2a3f5f"},"error_x":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5}}}],"heatmap":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"heatmap","colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"contourcarpet":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"contourcarpet"}],"table":[{"type":"table","header":{"line":{"color":"white"},"fill":{"color":"#C8D4E3"}},"cells":{"line":{"color":"white"},"fill":{"color":"#EBF0F8"}}}],"scatter3d":[{"line":{"colorbar":{"ticks":"","outlinewidth":0}},"type":"scatter3d","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"histogram2d":[{"colorbar":{"ticks":"","outlinewidth":0},"type":"histogram2d","colorscale":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]}],"scatterternary":[{"type":"scatterternary","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}],"barpolar":[{"type":"barpolar","marker":{"line":{"color":"#E5ECF6","width":0.5}}}],"scatterpolargl":[{"type":"scatterpolargl","marker":{"colorbar":{"ticks":"","outlinewidth":0}}}]},"layout":{"coloraxis":{"colorbar":{"ticks":"","outlinewidth":0}},"xaxis":{"gridcolor":"white","zerolinewidth":2,"title":{"standoff":15},"ticks":"","zerolinecolor":"white","automargin":true,"linecolor":"white"},"hovermode":"closest","paper_bgcolor":"white","geo":{"showlakes":true,"showland":true,"landcolor":"#E5ECF6","bgcolor":"white","subunitcolor":"white","lakecolor":"white"},"colorscale":{"sequential":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]],"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequentialminus":[[0.0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1.0,"#f0f921"]]},"yaxis":{"gridcolor":"white","zerolinewidth":2,"title":{"standoff":15},"ticks":"","zerolinecolor":"white","automargin":true,"linecolor":"white"},"shapedefaults":{"line":{"color":"#2a3f5f"}},"hoverlabel":{"align":"left"},"mapbox":{"style":"light"},"polar":{"angularaxis":{"gridcolor":"white","ticks":"","linecolor":"white"},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","ticks":"","linecolor":"white"}},"autotypenumbers":"strict","font":{"color":"#2a3f5f"},"ternary":{"baxis":{"gridcolor":"white","ticks":"","linecolor":"white"},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","ticks":"","linecolor":"white"},"aaxis":{"gridcolor":"white","ticks":"","linecolor":"white"}},"annotationdefaults":{"arrowhead":0,"arrowwidth":1,"arrowcolor":"#2a3f5f"},"plot_bgcolor":"#E5ECF6","title":{"x":0.05},"scene":{"xaxis":{"gridcolor":"white","gridwidth":2,"backgroundcolor":"#E5ECF6","ticks":"","showbackground":true,"zerolinecolor":"white","linecolor":"white"},"zaxis":{"gridcolor":"white","gridwidth":2,"backgroundcolor":"#E5ECF6","ticks":"","showbackground":true,"zerolinecolor":"white","linecolor":"white"},"yaxis":{"gridcolor":"white","gridwidth":2,"backgroundcolor":"#E5ECF6","ticks":"","showbackground":true,"zerolinecolor":"white","linecolor":"white"}},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"]}},"margin":{"l":50,"b":50,"r":50,"t":60},"title":"A Scatter Plot with Multiple Traces","yaxis":{"showgrid":true,"title":"Y Axis Label","range":[0,20]}}
+    linkhref (out): /data.txt
+    dfile (in): false
+    table (out): DataTable{DataFrame}(5×2 DataFrame
+ Row │ a      b
+     │ Int64  Int64
+─────┼──────────────
+   1 │     3      4
+   2 │     5      3
+   3 │     9      3
+   4 │     1      4
+   5 │     5      7, DataTableOptions(false, "ID", nothing, Dict{Union{Regex, String}, Dict{Symbol, Any}}()), DataTablePagination(:desc, false, 1, 50, nothing, ""), "")
+    text (in): The quick brown fox jumped over the ...
+), ("Área Fixa",), 0x0000000000007b00), Union{Ptr{Nothing}, Base.InterpreterIP}[Ptr{Nothing} @0x00007ff8857d14fc, Ptr{Nothing} @0x00007ff8857da1e5, Ptr{Nothing} @0x00007ff8857da3cd, Ptr{Nothing} @0x00007ff8857dd5bd, Ptr{Nothing} @0x00007ff8857e959b, Ptr{Nothing} @0x000002723e1a09fc, Ptr{Nothing} @0x000002723e1a151c, Ptr{Nothing} @0x000002723e1a157b, Ptr{Nothing} @0x000002723e1a079e, Ptr{Nothing} @0x000002723e18cb05, Ptr{Nothing} @0x000002723e18cf0b, Ptr{Nothing} @0x000002722d8c793a, Ptr{Nothing} @0x000002722d8c7e95, Ptr{Nothing} @0x000002722d8c7f7f, Ptr{Nothing} @0x000002722d8c7fc0, Ptr{Nothing} @0x000002722d8b4914, Ptr{Nothing} @0x000002722d8b497b, Ptr{Nothing} @0x00007ff8857e959b, Ptr{Nothing} @0x00007ff84e405e60, Ptr{Nothing} @0x00007ff84e493b5d, Ptr{Nothing} @0x00007ff84e41d5fd, Ptr{Nothing} @0x000002722d8b3ccb, Ptr{Nothing} @0x000002722d8b3de3, Ptr{Nothing} @0x00007ff8857e959b, Ptr{Nothing} @0x000002722d8ae351, Ptr{Nothing} @0x000002722d8b0d20, Ptr{Nothing} @0x000002722d8b127b, Ptr{Nothing} @0x00007ff885802e03])
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\z5YII\src\stipple\mutators.jl:54
+┌ Info: 2024-12-05 20:40:17 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-12-05 20:41:16 AssertionError("AAS.xlsx already exists.")
+└ @ Stipple C:\Users\renil\.julia\packages\Stipple\z5YII\src\Stipple.jl:1005
+┌ Info: 2024-12-05 20:41:56 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-05 20:42:54 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-12-05 20:43:34 C:\Users\renil\.julia\dev\TCCFunctions\app.jl no longer exists, deleted all methods
+└ @ Revise C:\Users\renil\.julia\packages\Revise\8jqWV\src\packagedef.jl:677
+┌ Info: 2024-12-05 20:43:34 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-05 20:43:39 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-05 20:43:51 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-05 20:43:58 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-05 20:44:00 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22

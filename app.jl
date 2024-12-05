@@ -1,6 +1,22 @@
 # the app.jl file is the main entry point to the application. It is a bridge between the UI and the data processing logic.
 using GenieFramework, DataFrames, CSV, Random, PlotlyBase, XLSX
+using Stipple, Stipple.ReactiveTools
+using StippleUI
+using StippleDownloads
+
+using DataFrames
+using XLSX
+
+import Stipple.opts
+import StippleUI.Tables.table
 @genietools
+
+
+function df_to_xlsx(df)
+    io = IOBuffer()
+    XLSX.writetable(io, df)
+    take!(io)
+end
 
 # Define onde serão alocados os arquivos upados
 const FILE_PATH = joinpath("public", "uploads")
@@ -390,7 +406,18 @@ mkpath(FILE_PATH)
     @out plotdata = [trace1, trace2]
     @out plotlayout = layout2
 
+    @out linkhref = "/data.txt"
+    @in dfile = false
+    @onbutton dfile begin
+        # do some processing and write to a file
+        write("./public/data.zip", string(randn(10)))
+        sleep(2)
+        # change the link url to trigger the file download script. The URL will still point to
+        # the same file, but the link href will have a different anchor after the #
+        linkhref = "/data.zip#($(rand(1)))"
+    end
 
+    
 
     @onbutton Button_process begin
         if selected_method === "Área Fixa"
@@ -440,6 +467,13 @@ mkpath(FILE_PATH)
         visibility_start_data = true
     end
 
+    @event download_df begin
+        try
+            download_binary(__model__, df_to_xlsx(Result_Table.data), "Resultado_Processamento.xlsx")
+        catch ex
+            println(ex)
+        end
+    end
 end
 
 # declare a route at / that'll render the HTML

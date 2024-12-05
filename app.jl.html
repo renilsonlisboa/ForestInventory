@@ -281,7 +281,8 @@
     </div>
     <div id="buttons" style="padding: 10px;">
         <q-btn label="Processar" v-on:click="Button_process = true" class="q-btn--night-theme"></q-btn>
-        <q-btn label="Importar dados" v-if="true" v-on:click="openUploader" class="q-btn--night-theme"></q-btn>
+        <q-btn label="Importar dados" v-if="true" v-on:click="function(event) { handle_event(event, 'started') }" class="q-btn--night-theme"></q-btn>
+        <q-btn label="Download" v-if="true" icon = "download" V-on:click="function(event) {handle_event(event, 'download_df')}" class="q-btn--night-theme"></q-btn>
         <q-btn label="Retornar" v-if="true" v-on:click="Button_return = true" class="q-btn--night-theme">
         </q-btn>
     </div>
