@@ -7,3 +7,13 @@
 └ @ Genie.Server C:\Users\renil\.julia\packages\Genie\A612O\src\Server.jl:182
 ┌ Info: 2024-12-05 22:10:19 Listening on: 127.0.0.1:8000, thread id: 1
 └ @ HTTP.Servers C:\Users\renil\.julia\packages\HTTP\sUvTn\src\Servers.jl:382
+┌ Info: 2024-12-06 03:19:30 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-06 03:19:51 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Info: 2024-12-06 03:25:39 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22
+┌ Warning: 2024-12-06 03:25:41 UndefVarError(:q__popover, Main)
+└ @ Genie.Renderer.Html C:\Users\renil\.julia\packages\Genie\A612O\src\renderers\Html.jl:140
+┌ Info: 2024-12-06 03:31:40 Autoreloading
+└ @ GenieAutoReload C:\Users\renil\.julia\packages\GenieAutoReload\ESvsh\src\GenieAutoReload.jl:22

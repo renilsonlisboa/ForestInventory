@@ -147,7 +147,25 @@ mkpath(FILE_PATH)
     # Apresenta ou oculta os dropbox "Processo de Amostragem" e "Formato da Parcela" quando selecionado
     @onchange selected_method begin
         if selected_method === ""
+            selected_unit_visibility = false
+            selected_variable_visibility = false
             selected_process_visibility = false
+            selected_dataset_visibility = false
+            selected_unit_dropbox_visibility = false
+            selected_subunit_dropbox_visibility = false
+            selected_occasion_visibility = false
+            selected_dap_column_visibility = false
+            selected_distance_column_visibility = false
+            selected_vol_column_visibility = false
+            selected_num_arvores_column_visibility = false
+            plot_area_visibility = false
+            inventoried_area_visibility = false
+            ear_visibility = false
+            alpha_visibility = false
+            fab_visibility = false
+            selected_estrato_visibility = false
+            selected_subestrato_visibility = false
+            visibility_start_data = false
         elseif selected_method === "Área Fixa" || selected_method === ""
             selected_process_visibility = true
             fab_visibility = false
