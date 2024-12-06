@@ -2,7 +2,7 @@
 
 julia_version = "1.11.1"
 manifest_format = "2.0"
-project_hash = "6e918a1a2751a09372b7a3a2ea424b46551dd429"
+project_hash = "f97f6d7c0d1d8bf25e545ea21296429466b67265"
 
 [[deps.AliasTables]]
 deps = ["PtrArrays", "Random"]
@@ -874,6 +874,12 @@ version = "0.28.16"
     DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
     JSON = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
     OffsetArrays = "6fe1bfb0-de20-5000-8ca7-80f57d26f881"
+
+[[deps.StippleDownloads]]
+deps = ["Stipple"]
+git-tree-sha1 = "e481e260ea618aeac014e4abacd28a541d0640c2"
+uuid = "291a174b-6542-42e7-9996-fc00d7c03310"
+version = "0.1.3"
 
 [[deps.StipplePlotly]]
 deps = ["DataFrames", "Genie", "Requires", "Stipple"]
